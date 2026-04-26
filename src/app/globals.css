@@ -1,0 +1,281 @@
+@import 'tailwindcss';
+
+/* TOKENS DEFAULT */
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+
+  --primary: 221 83% 53%;
+  --primary-foreground: 0 0% 100%;
+
+  --accent: 191 91% 36%;
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 215 16% 40%;
+  --border: 214 25% 85%;
+
+  --success: 142 71% 45%;
+  --warning: 38 92% 50%;
+  --destructive: 0 84% 60%;
+}
+
+/* THEMES */
+html.theme-green {
+  --primary: 142 71% 45%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 28 90% 55%;
+  --accent-foreground: 0 0% 100%;
+  --background: 120 20% 98%;
+  --foreground: 140 20% 15%;
+  --muted: 140 10% 40%;
+  --border: 140 20% 85%;
+}
+
+html.theme-blue {
+  --primary: 221 83% 53%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 185 75% 42%;
+  --accent-foreground: 0 0% 100%;
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 215 16% 47%;
+  --border: 214 32% 91%;
+}
+
+html.theme-teal {
+  --primary: 185 75% 42%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 28 90% 55%;
+  --accent-foreground: 0 0% 100%;
+  --background: 190 30% 97%;
+  --foreground: 200 30% 15%;
+  --muted: 190 15% 45%;
+  --border: 190 20% 85%;
+}
+
+html.theme-purple {
+  --primary: 250 65% 60%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 190 60% 45%;
+  --accent-foreground: 0 0% 100%;
+  --background: 250 30% 98%;
+  --foreground: 260 20% 20%;
+  --muted: 260 10% 50%;
+  --border: 260 20% 90%;
+}
+
+html.theme-premium {
+  --primary: 199 89% 48%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 38 92% 50%;
+  --accent-foreground: 0 0% 100%;
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 220 10% 50%;
+  --border: 210 20% 88%;
+}
+
+html.theme-earth {
+  --primary: 20 60% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  --accent: 35 70% 60%;
+  --accent-foreground: 0 0% 100%;
+
+  --background: 30 30% 96%;
+  --foreground: 25 25% 20%;
+
+  --muted: 25 15% 50%;
+  --border: 25 20% 85%;
+}
+
+html.theme-amber {
+  --primary: 38 85% 55%;
+  --primary-foreground: 0 0% 100%;
+
+  --accent: 45 90% 65%;
+  --accent-foreground: 0 0% 100%;
+
+  --background: 45 80% 98%;
+  --foreground: 30 25% 18%;
+
+  --muted: 40 30% 60%;
+  --border: 40 40% 88%;
+}
+
+html.theme-wine {
+  --primary: 350 65% 40%;
+  --primary-foreground: 0 0% 100%;
+
+  --accent: 355 75% 55%;
+  --accent-foreground: 0 0% 100%;
+
+  --background: 350 40% 97%;
+  --foreground: 350 20% 18%;
+
+  --muted: 350 15% 55%;
+  --border: 350 20% 85%;
+}
+
+html.theme-sand {
+  --primary: 32 55% 60%;
+  --primary-foreground: 0 0% 100%;
+
+  --accent: 35 80% 70%;
+  --accent-foreground: 0 0% 100%;
+
+  --background: 38 60% 97%;
+  --foreground: 30 15% 20%;
+
+  --muted: 32 25% 65%;
+  --border: 32 25% 88%;
+}
+
+/* DARK MODE (SYSTEM) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+    --muted: 215 20% 65%;
+    --border: 217 19% 27%;
+  }
+}
+
+/* TAILWIND V4 THEME BRIDGE */
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-border: hsl(var(--border));
+
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+  --color-destructive: hsl(var(--destructive));
+}
+
+/* BASE */
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+.link-primary {
+  @apply text-primary decoration-1 transition-opacity hover:underline hover:underline-offset-4 hover:opacity-80;
+}
+
+/* FONTS */
+.font-sans {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+/* COMPONENTS */
+
+/* dots container */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-single {
+  margin-top: 4rem;
+}
+
+.swiper-highlight {
+  margin-top: 3rem;
+}
+
+/* default bullet */
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+
+  background: hsl(var(--muted));
+  opacity: 0.4;
+
+  transition: all 0.2s ease;
+}
+
+/* active bullet */
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: hsl(var(--primary));
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.testimonial-prev,
+.testimonial-next {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+
+  color: hsl(var(--muted));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+  border-color: hsl(var(--primary));
+  color: hsl(var(--primary));
+  background: hsl(var(--primary) / 0.08);
+  cursor: pointer;
+}
+
+/* .testimonial-prev,
+.testimonial-next {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--primary));
+
+  color: hsl(var(--primary));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+  background: hsl(var(--primary));
+  color: white;
+  cursor: pointer;
+} */
+
+/* dots nur auf mobile/tablet */
+@media (min-width: 1024px) {
+  .testimonial-single-swiper .swiper-pagination {
+    display: none;
+  }
+}

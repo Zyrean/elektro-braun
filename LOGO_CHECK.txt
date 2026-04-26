@@ -1,0 +1,4 @@
+- Logo erstellen
+- px entfernen im figma via frame (mask) und exportieren.
+- Hintergrund entfernen via "https://www.remove.bg/de/upload"
+- Favicon erstellen via "https://www.hoststar.ch/de/tools/favicon-generator"

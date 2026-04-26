@@ -1,0 +1,70 @@
+✅ 1. CONTENT
+[ ] Alle Texte korrekt (keine Platzhalter)
+[ ] Rechtschreibung geprüft
+[ ] CTA Texte sinnvoll ("Termin buchen", etc.)
+[ ] Kontaktdaten korrekt (Adresse, Tel, Mail)
+[ ] Öffnungszeiten stimmen
+
+🔍 2. SEO BASICS
+[ ] Jede Seite hat einen individuellen Title
+[ ] Jede Seite hat eine Meta Description
+[ ] H1 ist genau 1x vorhanden
+[ ] H2/H3 Struktur logisch
+[ ] URLs sauber (/leistungen/manuelle-therapie)
+[ ] Canonical gesetzt
+[ ] robots: index, follow
+
+🖼️ 3. OPEN GRAPH / SHARING
+[ ] og:title gesetzt
+[ ] og:description gesetzt
+[ ] og:image vorhanden (1200x630)
+[ ] Bild wird korrekt angezeigt (FB Debugger testen)
+[ ] Seite sieht gut aus bei WhatsApp Share
+
+⚡ 4. PERFORMANCE
+[ ] PageSpeed getestet
+[ ] Bilder optimiert (kein 5MB Zeug)
+[ ] keine unnötigen Libraries
+[ ] keine Console Errors
+
+📱 5. RESPONSIVE / MOBILE
+[ ] Mobile Navigation funktioniert
+[ ] Buttons gut klickbar (Thumb-friendly)
+[ ] kein horizontal scroll
+[ ] Abstände passen (kein gequetsche)
+[ ] Text gut lesbar
+
+🧭 6. NAVIGATION / UX
+[ ] alle Links funktionieren
+[ ] kein 404
+[ ] Logo führt zur Startseite
+[ ] CTA Buttons funktionieren
+[ ] Scroll-Verhalten sauber
+
+📩 7. FORMS (falls vorhanden)
+[ ] Formular sendet korrekt
+[ ] Fehlermeldungen funktionieren
+[ ] Success Message vorhanden
+
+🔗 8. TECH / ROBUSTHEIT
+[ ] direkte URL Aufrufe funktionieren (/leistungen/xyz)
+[ ] keine kaputten Links
+[ ] keine leeren Seiten
+[ ] favicon vorhanden
+
+🤖 9. SEO TECH
+[ ] sitemap.xml vorhanden
+[ ] robots.txt vorhanden
+[ ] Google kann Seite indexieren
+
+🧪 10. FINAL CHECK
+[ ] Seite einmal komplett selbst durchgeklickt
+[ ] auf Handy getestet
+[ ] auf Desktop getestet
+[ ] jemand anderem gezeigt (optional)
+
+🔥 BONUS (Pro Move)
+[ ] Inkognito testen (kein Cache)
+[ ] langsames Internet simulieren
+[ ] Seite teilen (WhatsApp testen)
+

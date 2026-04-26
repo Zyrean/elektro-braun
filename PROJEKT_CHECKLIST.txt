@@ -1,0 +1,41 @@
+# 🔧 Setup Checklist
+
+## 1. Branding
+- [ ] Logo ersetzen
+- [ ] Favicon ersetzen
+- [ ] Farben anpassen (tailwind.config)
+- [ ] Schriftart prüfen / ändern
+
+## 2. Company Daten
+- [ ] Name
+- [ ] Adresse
+- [ ] Telefon
+- [ ] Email
+- [ ] Öffnungszeiten
+- [ ] Social Links
+
+## 3. Inhalte (Text)
+- [ ] Hero Texte
+- [ ] Leistungen Texte
+- [ ] Über uns
+- [ ] Karriere Inhalte
+- [ ] Kontakt Texte
+
+## 4. Bilder
+- [ ] Hero Bilder
+- [ ] Leistungen Bilder
+- [ ] Team Bilder
+- [ ] Kontakt / Karriere Bilder
+
+## 5. Routing & Links
+- [ ] CTA Buttons prüfen
+- [ ] interne Links korrekt
+- [ ] Anchor Links (#team etc.)
+
+## 6. Formulare
+- [ ] Email Adresse korrekt
+- [ ] Felder sinnvoll
+
+## 7. SEO (optional)
+- [ ] Title
+- [ ] Description

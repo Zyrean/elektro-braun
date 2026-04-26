@@ -1,0 +1,95 @@
+
+METADATA
+
+export const metadata: Metadata = {
+  title: `Physiotherapie Leistungen in ${COMPANY_CITY} | ${COMPANY_NAME}`,
+
+  description: `Entdecken Sie die Leistungen von ${COMPANY_NAME} in ${COMPANY_PLZ} ${COMPANY_CITY}. Moderne Physiotherapie, individuelle Therapieansätze und nachhaltige Behandlungskonzepte.`,
+
+  alternates: {
+    canonical: `${COMPANY_WEBSITE}/leistungen`,
+  },
+
+  openGraph: {
+    title: `Physiotherapie Leistungen in ${COMPANY_CITY} | ${COMPANY_NAME}`,
+    description: `Unsere physiotherapeutischen Leistungen in ${COMPANY_CITY}. Individuell abgestimmt und professionell umgesetzt.`,
+    url: `${COMPANY_WEBSITE}/leistungen`,
+    type: "website",
+    locale: "de_DE",
+    siteName: COMPANY_NAME,
+    images: [
+      {
+        url: "/services/services-hero.png",
+        width: 1200,
+        height: 630,
+        alt: `Leistungen von ${COMPANY_NAME} in ${COMPANY_CITY}`,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: `Leistungen | ${COMPANY_NAME}`,
+    description: `Physiotherapeutische Leistungen in ${COMPANY_CITY}.`,
+    images: ["/services/services-hero.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+__________
+
+
+SITEMAP
+
+import type { MetadataRoute } from "next";
+import { COMPANY_WEBSITE } from "@/data/constants";
+import { services } from "@/data/services";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = COMPANY_WEBSITE;
+
+  const staticPages = ["", "/leistungen", "/kontakt", "/ueber-uns", "/impressum", "/datenschutz"];
+
+  const staticEntries = staticPages.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: route === "" ? 1 : 0.8,
+  }));
+
+  const serviceEntries = services.map((service) => ({
+    url: `${baseUrl}/leistungen/${service.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...serviceEntries];
+}
+
+
+___________
+
+
+ROBOTS
+
+import type { MetadataRoute } from "next";
+import { COMPANY_WEBSITE } from "@/data/constants";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: `${COMPANY_WEBSITE}/sitemap.xml`,
+  };
+}
+
+
+
+___________
