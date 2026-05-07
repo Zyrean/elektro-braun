@@ -2,7 +2,6 @@
 
 import { Text } from '@/components/ui/Text'
 import { cn } from '@/lib/cn'
-import Image from 'next/image'
 import Link from 'next/link'
 
 interface LogoProps {

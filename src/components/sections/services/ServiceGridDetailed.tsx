@@ -46,18 +46,19 @@ function ServiceGridDetailed({ showIndications = true }: ServiceGridDetailedProp
               {/* <p className="absolute right-4 top-4 text-primary text-3xl opacity-20">0{id + 1}</p> */}
               <div className="flex h-full flex-col gap-4 p-6 sm:p-7 lg:p-8">
                 <Heading as="h3">
-                  {service.title} {service.abbreviation && `(${service.abbreviation})`}
+                  {/* {service.title} {service.abbreviation && `(${service.abbreviation})`} */}
+                  {service.title}
                 </Heading>
 
                 <Text color="muted">{service.teaser}</Text>
 
-                {showIndications && (
+                {/* {showIndications && (
                   <ul className="ml-4 list-disc space-y-1 text-sm">
                     {service.indications?.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
                   </ul>
-                )}
+                )} */}
 
                 <ReadMoreLink
                   icon={ArrowRight}

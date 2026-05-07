@@ -7,7 +7,7 @@ interface TestimonialItemProps {
 }
 
 function TestimonialItem({ testimonial }: TestimonialItemProps) {
-  const { text, author, age, image } = testimonial
+  const { text, author, image } = testimonial
 
   return (
     <div className="flex h-64 w-full flex-col rounded-2xl bg-white/75 p-6 shadow-sm transition">

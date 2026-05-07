@@ -62,7 +62,8 @@ function ServiceSimpleGrid() {
                   </div>
 
                   <Heading as="h3" size="sm" className="mt-6 text-[22px] text-balance">
-                    {service.title} {service.abbreviation && `(${service.abbreviation})`}
+                    {/* {service.title} {service.abbreviation && `(${service.abbreviation})`} */}
+                    {service.title}
                   </Heading>
 
                   <Text className="mt-2 line-clamp-3" color="muted" size="sm">

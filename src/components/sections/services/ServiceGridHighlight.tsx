@@ -33,7 +33,8 @@ function ServiceGridHighlight() {
 
           <div className="py-6 pr-6 pl-4 lg:py-8 lg:pr-8 lg:pl-6">
             <Heading as="h2" className="text-xl lg:text-4xl">
-              {highlight.title} {highlight.abbreviation && `(${highlight.abbreviation})`}
+              {/* {highlight.title} {highlight.abbreviation && `(${highlight.abbreviation})`} */}
+              {highlight.title}
             </Heading>
 
             <Text
@@ -69,7 +70,8 @@ function ServiceGridHighlight() {
 
                 <div className="flex h-full flex-col p-6">
                   <Heading as="h3" size="sm" className="text-[22px] text-balance">
-                    {service.title} {service.abbreviation && `(${service.abbreviation})`}
+                    {/* {service.title} {service.abbreviation && `(${service.abbreviation})`} */}
+                    {service.title}
                   </Heading>
 
                   <Text className="mt-2 line-clamp-3" color="muted" size="sm">

@@ -33,7 +33,8 @@ function ServiceAccordion() {
                           className="group-hover:text-primary flex items-center gap-3"
                         >
                           {Icon && <Icon className="text-primary size-5" />}
-                          {service.title} {service.abbreviation && `(${service.abbreviation})`}
+                          {/* {service.title} {service.abbreviation && `(${service.abbreviation})`} */}
+                          {service.title}
                         </Heading>
 
                         {open ? (
