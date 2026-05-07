@@ -1,5 +1,5 @@
 import { LucideIcon } from 'lucide-react'
-import { ClipboardCheck, FileSearch, Activity, HeartPulse } from 'lucide-react'
+import { MessageCircle, PencilRuler, Wrench, ShieldCheck } from 'lucide-react'
 
 interface ServicesStep {
   title: string
@@ -9,23 +9,23 @@ interface ServicesStep {
 
 export const servicesSteps: ServicesStep[] = [
   {
-    title: 'Erstgespräch & Analyse',
-    text: 'Wir nehmen uns Zeit für eine ausführliche Anamnese und eine präzise Befundaufnahme.',
-    icon: FileSearch,
+    title: 'Persönliche Beratung',
+    text: 'Wir besprechen Ihr Projekt und Ihre Anforderungen im Detail. Dabei klären wir alle offenen Fragen und beraten Sie zu passenden Lösungen.',
+    icon: MessageCircle,
   },
   {
-    title: 'Individueller Therapieplan',
-    text: 'Basierend auf Ihrer Situation erstellen wir ein maßgeschneidertes Behandlungskonzept.',
-    icon: ClipboardCheck,
+    title: 'Individuelle Planung',
+    text: 'Auf Basis Ihrer Wünsche erstellen wir ein durchdachtes Konzept – abgestimmt auf Ihr Gebäude, Ihre Nutzung und moderne technische Standards.',
+    icon: PencilRuler,
   },
   {
-    title: 'Aktive Behandlung',
-    text: 'Mit gezielten Techniken und Übungen arbeiten wir gemeinsam an Ihrer Genesung.',
-    icon: Activity,
+    title: 'Fachgerechte Umsetzung',
+    text: 'Unsere Arbeiten werden sauber, zuverlässig und nach aktuellen Vorschriften ausgeführt. Dabei achten wir auf höchste Qualität und Sicherheit.',
+    icon: Wrench,
   },
   {
-    title: 'Nachhaltige Stabilisierung',
-    text: 'Wir geben Ihnen Übungen und Empfehlungen für langfristige Beschwerdefreiheit mit.',
-    icon: HeartPulse,
+    title: 'Prüfung & Übergabe',
+    text: 'Nach Abschluss prüfen wir alle Installationen sorgfältig und übergeben Ihnen ein einwandfrei funktionierendes Ergebnis.',
+    icon: ShieldCheck,
   },
 ]

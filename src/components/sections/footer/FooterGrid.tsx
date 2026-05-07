@@ -16,7 +16,7 @@ function FooterGrid() {
           <div className="mb-8 flex flex-col items-center space-y-6 lg:mb-0 lg:items-start">
             <Logo />
             <Text className="max-w-60 text-center lg:text-start">
-              Individuelle Therapie für mehr Beweglichkeit, Gesundheit und Lebensqualität.
+              Ihr Partner für Elektroinstallation, Smart Home und moderne Energielösungen.
             </Text>
             <div className="flex gap-x-6">
               {COMPANY.socials.map((item) => (
@@ -89,7 +89,7 @@ function FooterGrid() {
                   {COMPANY.phone.display}
                 </a>
                 <a href={`mailto:${COMPANY.email}`} className="hover:text-primary">
-                  E-Mail: {COMPANY.email}
+                  {COMPANY.email}
                 </a>
               </div>
             </div>

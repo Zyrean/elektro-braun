@@ -1,5 +1,5 @@
 import { LucideIcon } from 'lucide-react'
-import { HeartHandshake, Award, Sparkles } from 'lucide-react'
+import { ShieldCheck, Zap, Wrench, MapPin, Clock, BadgeCheck } from 'lucide-react'
 
 export interface Feature {
   id: number
@@ -14,35 +14,68 @@ export interface Feature {
 export const features: Feature[] = [
   {
     id: 1,
-    feature: 'Persönlich',
-    header: 'Individuelle Betreuung',
+    feature: 'Zuverlässig',
+    header: 'Saubere & sichere Arbeit',
     description:
-      'Wir nehmen uns Zeit für Sie und entwickeln maßgeschneiderte Lösungen – abgestimmt auf Ihre persönlichen Bedürfnisse.',
+      'Wir arbeiten präzise, sauber und nach aktuellen Standards – für maximale Sicherheit und langlebige Ergebnisse.',
     descriptionLong:
-      'Jede Behandlung beginnt mit einer ausführlichen Analyse Ihrer Beschwerden und Ziele. Auf dieser Basis entwickeln wir eine individuell abgestimmte Therapie, die genau zu Ihnen passt und nachhaltige Fortschritte ermöglicht.',
+      'Jedes Projekt wird von uns fachgerecht und nach den neuesten Vorschriften umgesetzt. Saubere Arbeit, strukturierte Abläufe und höchste Sorgfalt stehen dabei immer im Mittelpunkt.',
     image: '/features/feature-01.png',
-    icon: HeartHandshake,
+    icon: ShieldCheck,
   },
   {
     id: 2,
-    feature: 'Professionell',
-    header: 'Fachliche Kompetenz',
+    feature: 'Modern',
+    header: 'Technik auf dem neuesten Stand',
     description:
-      'Moderne Methoden, kontinuierliche Weiterbildung und langjährige Erfahrung garantieren nachhaltige Ergebnisse.',
+      'Ob Smart Home, Photovoltaik oder moderne Installationen – wir setzen auf zukunftssichere Lösungen.',
     descriptionLong:
-      'Unsere Therapie basiert auf modernen physiotherapeutischen Methoden und langjähriger Erfahrung. Durch regelmäßige Fortbildungen bleiben wir stets auf dem neuesten Stand, um Ihnen eine effektive und nachhaltige Behandlung zu bieten.',
+      'Wir arbeiten mit moderner Technik und innovativen Lösungen, um Ihnen effiziente, nachhaltige und zukunftssichere Elektroinstallationen zu bieten.',
     image: '/features/feature-02.png',
-    icon: Award,
+    icon: Zap,
   },
   {
     id: 3,
-    feature: 'Vielseitig',
-    header: 'Ganzheitlicher Ansatz',
+    feature: 'Service',
+    header: 'Persönlicher Ansprechpartner',
     description:
-      'Wir betrachten nicht nur Symptome, sondern den Menschen als Ganzes – für langfristige Gesundheit und Wohlbefinden.',
+      'Von der ersten Beratung bis zur Umsetzung begleiten wir Sie zuverlässig und stehen Ihnen jederzeit zur Seite.',
     descriptionLong:
-      'Wir betrachten nicht nur einzelne Beschwerden, sondern den gesamten Bewegungsapparat. Durch einen ganzheitlichen Ansatz unterstützen wir Sie dabei, Ursachen zu erkennen und Ihre Gesundheit langfristig zu stärken.',
+      'Bei uns haben Sie einen festen Ansprechpartner, der Ihr Projekt kennt und Sie persönlich betreut – transparent, ehrlich und zuverlässig.',
     image: '/features/feature-03.png',
-    icon: Sparkles,
+    icon: Wrench,
+  },
+  {
+    id: 4,
+    feature: 'Regional',
+    header: 'Schnell vor Ort',
+    description:
+      'Als regionaler Fachbetrieb sind wir schnell bei Ihnen und bieten direkte, persönliche Unterstützung.',
+    descriptionLong:
+      'Durch unsere regionale Ausrichtung können wir flexibel und schnell auf Ihre Anfragen reagieren. Kurze Wege ermöglichen eine persönliche Betreuung und eine zügige Umsetzung Ihrer Projekte.',
+    image: '/features/feature-04.png',
+    icon: MapPin,
+  },
+  {
+    id: 5,
+    feature: 'Flexibel',
+    header: 'Termine nach Ihren Bedürfnissen',
+    description:
+      'Wir richten uns nach Ihrem Zeitplan und finden passende Lösungen für Ihr Projekt.',
+    descriptionLong:
+      'Ob kurzfristige Termine oder langfristige Planung – wir arbeiten flexibel und passen uns Ihren Anforderungen an, um eine reibungslose Umsetzung zu gewährleisten.',
+    image: '/features/feature-05.png',
+    icon: Clock,
+  },
+  {
+    id: 6,
+    feature: 'Qualität',
+    header: 'Geprüfte Materialien',
+    description:
+      'Wir setzen auf hochwertige Produkte und starke Partner für langlebige Ergebnisse.',
+    descriptionLong:
+      'Durch den Einsatz geprüfter Materialien und die Zusammenarbeit mit renommierten Herstellern garantieren wir Ihnen eine hohe Qualität und langfristige Zuverlässigkeit.',
+    image: '/features/feature-06.png',
+    icon: BadgeCheck,
   },
 ]

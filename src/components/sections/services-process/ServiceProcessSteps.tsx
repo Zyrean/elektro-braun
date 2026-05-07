@@ -7,9 +7,9 @@ import { servicesSteps } from '@/data/servicesSteps'
 
 function ServiceProcessSteps() {
   return (
-    <AppSection top="3xl" id="services" className="scroll-mt-30 lg:scroll-mt-40">
+    <AppSection id="services" className="scroll-mt-30 lg:scroll-mt-40">
       <AppContainer>
-        <SectionHeader title="So läuft Ihre Behandlung ab" />
+        <SectionHeader title="Ablauf Ihres Projekts" />
 
         <div className="mx-auto max-w-3xl space-y-10">
           {servicesSteps.map((step, index) => (

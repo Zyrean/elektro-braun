@@ -32,6 +32,17 @@ html.theme-green {
   --border: 140 20% 85%;
 }
 
+html.theme-orange {
+  --primary: 28 90% 55%; /* kräftiges Orange */
+  --primary-foreground: 0 0% 100%;
+  --accent: 28 95% 48%; /* etwas dunkler für Hover / Secondary */
+  --accent-foreground: 0 0% 100%;
+  --background: 210 40% 98%; /* dein cleanes Light Background */
+  --foreground: 222 47% 11%;
+  --muted: 220 10% 45%;
+  --border: 210 20% 88%;
+}
+
 html.theme-blue {
   --primary: 221 83% 53%;
   --primary-foreground: 0 0% 100%;
@@ -118,6 +129,20 @@ html.theme-wine {
   --border: 350 20% 85%;
 }
 
+html.theme-red {
+  --primary: 354 85% 42%; /* #cc0c1e */
+  --primary-foreground: 0 0% 100%;
+
+  --accent: 32 95% 52%; /* warmes Orange als Kontrast */
+  --accent-foreground: 0 0% 100%;
+
+  --background: 0 0% 98%; /* leicht warmes Weiß */
+  --foreground: 222 47% 11%;
+
+  --muted: 220 10% 45%;
+  --border: 0 0% 88%;
+}
+
 html.theme-sand {
   --primary: 32 55% 60%;
   --primary-foreground: 0 0% 100%;
@@ -167,10 +192,10 @@ body {
   color: hsl(var(--foreground));
 }
 
-:focus-visible {
+/* :focus-visible {
   outline: 2px solid hsl(var(--primary));
   outline-offset: 2px;
-}
+} */
 
 .link-primary {
   @apply text-primary decoration-1 transition-opacity hover:underline hover:underline-offset-4 hover:opacity-80;

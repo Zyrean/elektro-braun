@@ -37,7 +37,7 @@ function TeamPhilosophy() {
     <AppSection>
       <AppContainer>
         <SectionHeader
-          title=" An folgedem halten wir fest"
+          title="An folgedem halten wir fest"
           subtitle="Individuelle Lösungen für Ihre Gesundheit und Ihr Wohlbefinden."
         />
         <div className="divide-muted/10 grid grid-cols-1 divide-y sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:divide-y-0 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">

@@ -7,38 +7,38 @@ interface Faq {
 export const faqs: Faq[] = [
   {
     id: 0,
-    question: 'Benötige ich ein Rezept vom Arzt?',
+    question: 'Mit welchen Kosten muss ich rechnen?',
     answer:
-      'Für gesetzlich Versicherte ist ein gültiges Rezept erforderlich. Privatleistungen können auch ohne ärztliche Verordnung in Anspruch genommen werden. Gerne beraten wir Sie individuell zu Ihren Möglichkeiten.',
+      'Die Kosten hängen vom Umfang und der Art des Projekts ab. Nach einer ersten Beratung erstellen wir Ihnen ein transparentes und individuelles Angebot.',
   },
   {
     id: 1,
-    question: 'Was soll ich zum ersten Termin mitbringen?',
+    question: 'Wie schnell können Sie einen Termin anbieten?',
     answer:
-      'Bitte bringen Sie Ihr Rezept (falls vorhanden), relevante Befunde oder Arztberichte sowie ein großes Handtuch mit. Bequeme Kleidung erleichtert die Behandlung.',
+      'In der Regel können wir kurzfristig Termine anbieten. Je nach Auslastung und Projektumfang stimmen wir gemeinsam einen passenden Termin ab.',
   },
   {
     id: 2,
-    question: 'Wie lange dauert eine Behandlung?',
+    question: 'Arbeiten Sie auch im Altbau oder bei Sanierungen?',
     answer:
-      'Die Dauer richtet sich nach der verordneten Therapieform und beträgt in der Regel zwischen 20 und 30 Minuten. Bei speziellen Anwendungen kann die Behandlungszeit variieren.',
+      'Ja, wir übernehmen sowohl Neubauten als auch Sanierungen im Bestand und sorgen für eine sichere und normgerechte Umsetzung.',
   },
   {
     id: 3,
-    question: 'Übernimmt meine Krankenkasse die Kosten?',
+    question: 'Übernehmen Sie auch kleinere Arbeiten oder Reparaturen?',
     answer:
-      'Gesetzliche Krankenkassen übernehmen die Kosten gemäß ärztlicher Verordnung. Es fällt lediglich die gesetzlich vorgeschriebene Zuzahlung an. Privatversicherte erhalten eine Rechnung entsprechend der vereinbarten Leistungen.',
+      'Ja, neben größeren Projekten kümmern wir uns auch um kleinere Installationen, Reparaturen und Wartungsarbeiten.',
   },
   {
     id: 4,
-    question: 'Wie kann ich einen Termin vereinbaren?',
+    question: 'Muss ich mich selbst um Material oder Planung kümmern?',
     answer:
-      'Sie erreichen uns telefonisch während unserer Öffnungszeiten oder jederzeit über unser Kontaktformular. Wir melden uns schnellstmöglich bei Ihnen zurück.',
+      'Nein, wir übernehmen auf Wunsch die komplette Planung sowie die Auswahl und Beschaffung der passenden Materialien.',
   },
   {
     id: 5,
-    question: 'Was passiert, wenn ich einen Termin absagen muss?',
+    question: 'Wie läuft die Zusammenarbeit ab?',
     answer:
-      'Bitte informieren Sie uns mindestens 24 Stunden vor Ihrem Termin. So können wir den Termin neu vergeben. Bei kurzfristigen Absagen behalten wir uns vor, eine Ausfallgebühr zu berechnen.',
+      'Nach Ihrer Anfrage besprechen wir Ihr Projekt persönlich, planen die Umsetzung und führen die Arbeiten fachgerecht durch – zuverlässig und transparent.',
   },
 ]

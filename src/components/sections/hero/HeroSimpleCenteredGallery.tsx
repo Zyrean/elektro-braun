@@ -68,7 +68,7 @@ function HeroSimpleCenteredGallery({ images, alt, children }: HeroGalleryProps) 
 
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length)
-    }, 9000) // 🔥 langsamer (wichtiger!)
+    }, 5000) // 🔥 langsamer (wichtiger!)
 
     return () => clearInterval(interval)
   }, [images])

@@ -69,26 +69,26 @@ export async function generateMetadata({
   }
 }
 
-interface ListComponentProps {
-  title: string
-  items?: string[]
-}
+// interface ListComponentProps {
+//   title: string
+//   items?: string[]
+// }
 
-function ListComponent({ items, title }: ListComponentProps) {
-  return (
-    <div>
-      <Heading as="h3" className="mb-3">
-        {title}
-      </Heading>
+// function ListComponent({ items, title }: ListComponentProps) {
+//   return (
+//     <div>
+//       <Heading as="h3" className="mb-3">
+//         {title}
+//       </Heading>
 
-      <ul className="list-disc space-y-2 pl-5">
-        {items?.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-  )
-}
+//       <ul className="list-disc space-y-2 pl-5">
+//         {items?.map((item, index) => (
+//           <li key={index}>{item}</li>
+//         ))}
+//       </ul>
+//     </div>
+//   )
+// }
 
 export default async function ServiceDetailsPage({
   params,
@@ -134,11 +134,11 @@ export default async function ServiceDetailsPage({
               </Heading>
               <Text className="leading-relaxed">{service.description}</Text>
 
-              <div className="mt-8 flex flex-col gap-10">
+              {/* <div className="mt-8 flex flex-col gap-10">
                 <ListComponent title="Schmerzsymptome" items={service.indications} />
                 <ListComponent title="Behandlungsablauf" items={service.process} />
                 <ListComponent title="Vorteile" items={service.benefits} />
-              </div>
+              </div> */}
             </div>
           </div>
 

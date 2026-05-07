@@ -1,65 +1,89 @@
-import CtaCenter from '@/components/sections/cta/CtaCenter'
-import FaqAccordion from '@/components/sections/faq/FaqAccordion'
+import CtaImage from '@/components/sections/cta/CtaImage'
 import FaqSideBySide from '@/components/sections/faq/FaqSideBySide'
-import SectionHeroSplit from '@/components/sections/section-hero/SectionHeroSplit'
-import ServiceProcessIcons from '@/components/sections/services-process/ServiceProcessIcons'
+import { FeatureIconGrid } from '@/components/sections/features/FeatureIconGrid'
+import HeroTwoCards from '@/components/sections/hero/HeroTwoCards'
+import ReferencesColumnBackgroundImage from '@/components/sections/references/ReferencesColumnBackgroundImage'
 import ServiceProcessSteps from '@/components/sections/services-process/ServiceProcessSteps'
-import ServiceProcessTimeline from '@/components/sections/services-process/ServiceProcessTimeline'
-import ServiceGridDetailed from '@/components/sections/services/ServiceGridDetailed'
-import ServicePhilosophy from '@/components/sections/services/ServicePhilosophy'
+import ServiceGridImage from '@/components/sections/services/ServiceGridImage'
+import { Button } from '@/components/ui/Button'
 import { Heading } from '@/components/ui/Heading'
 import { Text } from '@/components/ui/Text'
 import { faqs } from '@/data/faqs'
+import { Check } from 'lucide-react'
 
 function ServicePage() {
+  const serviceFeatures = [
+    {
+      text: 'Elektroinstallation & Sanierung',
+    },
+    {
+      text: 'Photovoltaik & Energiesysteme',
+    },
+    {
+      text: 'Smart Home & moderne Technik',
+    },
+    {
+      text: 'Wartung, Service & E-Check',
+    },
+  ]
+
   return (
     <>
-      {/* <SectionHeroSimpleCentered src="/home-hero.png" alt="Physiotherapie Behandlung">
-        <Heading as="h1" className="text-white">
-          Unsere Leistungen
-        </Heading>
-      </SectionHeroSimpleCentered> */}
+      <HeroTwoCards imageSrc="/home-hero-2.png" imageAlt="Elektroinstallation Leistungen">
+        {/* WENN MAN CARD VERSETZEN WILL = lg:-translate-y-10 */}
+        <div className="from-primary/15 to-accent/20 relative z-10 max-w-md rounded-2xl bg-linear-to-br via-white p-8 shadow-xl shadow-black/10 backdrop-blur-lg lg:col-span-1 lg:-mr-20">
+          <Heading as="h1" className="leading-tight lg:text-5xl">
+            Unsere Leistungen
+          </Heading>
 
-      <SectionHeroSplit src="/home-hero.png" alt="Hero image">
-        <Heading as="h1"> Unsere Leistungen</Heading>
+          <div className="mt-6 flex flex-col gap-2.5">
+            {serviceFeatures.map((feature, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <Check className="text-primary h-4 w-4" />
+                <Text>{feature.text}</Text>
+              </div>
+            ))}
+          </div>
 
-        <Text className="mt-6">
-          Moderne Physiotherapie für mehr Beweglichkeit und ein schmerzfreies Leben. Mit individuell
-          abgestimmten Behandlungen helfen wir Ihnen, Beschwerden gezielt zu lindern und Schritt für
-          Schritt zurück zu mehr Lebensqualität zu finden.
-        </Text>
-      </SectionHeroSplit>
+          <Button href="/kontakt#contact-form" className="mt-8">
+            Projekt unverbindlich anfragen
+          </Button>
+        </div>
+      </HeroTwoCards>
 
-      {/* <SectionHeroSplitFeature src="/home-hero.png" alt="Hero image">
-        <Heading as="h1"> Unsere Leistungen</Heading>
+      <ServiceGridImage
+        belowHero={true}
+        showButton={false}
+        title="Unsere Leistungen im Detail"
+        subtitle="Von der klassischen Elektroinstallation bis hin zu modernen Energielösungen – wir bieten Ihnen durchdachte und zuverlässige Lösungen für jedes Projekt."
+      />
 
-        <Text className="mt-6">
-          Moderne Physiotherapie für mehr Beweglichkeit und ein schmerzfreies Leben. Mit individuell
-          abgestimmten Behandlungen helfen wir Ihnen, Beschwerden gezielt zu lindern und Schritt für
-          Schritt zurück zu mehr Lebensqualität zu finden.
-        </Text>
-      </SectionHeroSplitFeature> */}
-
-      <ServicePhilosophy />
-
-      <ServiceGridDetailed />
-      <ServiceGridDetailed showIndications={false} />
+      <FeatureIconGrid
+        title="Darauf können Sie sich verlassen"
+        subtitle="Wir setzen auf Qualität, saubere Arbeit und zuverlässige Umsetzung – für Ergebnisse, die langfristig überzeugen."
+      />
 
       <ServiceProcessSteps />
-      <ServiceProcessIcons />
-      <ServiceProcessTimeline />
 
-      {/* FAQ */}
-      <FaqAccordion faqs={faqs} />
-      <FaqSideBySide />
+      <ReferencesColumnBackgroundImage
+        limit={3}
+        title="Ausgewählte Projekte"
+        subtitle="Ein Einblick in unsere Arbeit – von der Planung bis zur Umsetzung zuverlässig realisiert."
+      />
 
-      <CtaCenter
-        title="Vereinbaren Sie jetzt Ihren Termin"
-        text="Moderne Physiotherapie für mehr Beweglichkeit..."
-        primaryLabel="Termin vereinbaren"
+      <FaqSideBySide
+        faqs={faqs}
+        title="Häufige Fragen zur Elektrotechnik"
+        subtitle="Antworten auf die wichtigsten Fragen rund um Planung, Ablauf, Kosten und unsere Leistungen."
+      />
+
+      <CtaImage
+        title="Starten Sie jetzt Ihr Elektroprojekt"
+        text="Ob Neubau, Sanierung oder moderne Energielösungen – wir begleiten Sie von der Planung bis zur Umsetzung zuverlässig und fachgerecht."
+        primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
-        secondaryLabel="Leistungen"
-        secondaryHref="/leistungen"
+        secondaryLabel="Referenzen ansehen"
+        secondaryHref="/referenzen"
       />
     </>
   )

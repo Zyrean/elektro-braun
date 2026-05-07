@@ -12,7 +12,7 @@ function TestimonialItem({ testimonial }: TestimonialItemProps) {
   return (
     <div className="flex h-64 w-full flex-col rounded-2xl bg-white/75 p-6 shadow-sm transition">
       <blockquote className="text-left leading-relaxed font-medium">
-        <p className="line-clamp-5">{text}</p>
+        <Text className="line-clamp-5 text-[15px]">{text}</Text>
       </blockquote>
 
       <figcaption className="mt-auto pt-6">
@@ -33,8 +33,9 @@ function TestimonialItem({ testimonial }: TestimonialItemProps) {
           <Text size="sm" className="font-semibold">
             {author}
           </Text>
-          <span className="bg-primary h-1 w-1 rounded-full"></span>
-          <Text size="sm">{age}</Text>
+          {/* <span className="bg-primary h-1 w-1 rounded-full"></span> */}
+          {/* NUR WENN MAN ES AUCH ANZEIGEN LASSEN WILL */}
+          {/* <Text size="sm">{age}</Text> */}
         </div>
       </figcaption>
     </div>

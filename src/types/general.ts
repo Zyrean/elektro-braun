@@ -5,20 +5,38 @@ export interface Navigation {
   label: string
 }
 
+export interface ServiceSection {
+  title: string
+  items?: string[]
+  content?: string
+}
+
 export interface Service {
-  id?: number
-  title?: string
-  abbreviation?: string
-  slug?: string
-  teaser?: string
-  description?: string
-  indications?: string[]
-  process?: string[]
-  benefits?: string[]
+  id: number
+  title: string
+  slug: string
+  teaser: string
+  description: string
+  sections?: ServiceSection[]
   icon?: LucideIcon
   image?: string
-  images: string[]
+  images?: string[]
 }
+
+// export interface Service {
+//   id?: number
+//   title?: string
+//   abbreviation?: string
+//   slug?: string
+//   teaser?: string
+//   description?: string
+//   indications?: string[]
+//   process?: string[]
+//   benefits?: string[]
+//   icon?: LucideIcon
+//   image?: string
+//   images: string[]
+// }
 
 export interface Faq {
   id: number

@@ -14,7 +14,7 @@ import { AppSection } from '@/components/ui/AppSection'
 import { AppContainer } from '@/components/ui/AppContainer'
 import Image from 'next/image'
 
-async function fakeApiCall() {
+export async function fakeApiCall() {
   return new Promise((resolve) => setTimeout(resolve, 1500))
 }
 

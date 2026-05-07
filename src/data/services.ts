@@ -1,217 +1,307 @@
 import { Service } from '@/types/general'
-import { Hand, Activity, Dumbbell, Waves, Brain, Sparkles, Target } from 'lucide-react'
+import { Zap, Sun, Wifi, Wrench, Lightbulb, Network } from 'lucide-react'
 
 export const services: Service[] = [
   {
     id: 0,
-    title: 'Manuelle Therapie',
-    abbreviation: 'MT',
-    slug: 'manuelle-therapie',
-    image: '/services/manuelle-therapie.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Hand,
-    teaser:
-      'Gezielte Behandlung von Gelenk- und Wirbelsäulenbeschwerden für mehr Beweglichkeit und Funktion.',
+    icon: Zap,
+    title: 'Elektroinstallation',
+    slug: 'elektroinstallation',
+    image: '/services/elektroinstallation.png',
+    teaser: 'Moderne Elektroinstallationen für Neubau und Sanierung.',
     description:
-      'Die manuelle Therapie ist eine spezialisierte Behandlungsmethode zur Therapie von Funktionsstörungen der Gelenke, Muskeln und der Wirbelsäule. Nach einer ausführlichen Befundaufnahme analysieren wir Beweglichkeit, Schmerzpunkte und mögliche Blockaden. Mit präzisen Mobilisationstechniken lösen wir Bewegungseinschränkungen, reduzieren Schmerzen und stellen die natürliche Funktion des Bewegungsapparates wieder her. Ergänzend erhalten Sie individuelle Übungen, um die erzielten Fortschritte langfristig zu stabilisieren.',
-    indications: [
-      'Rückenschmerzen',
-      'Nackenverspannungen',
-      'Bandscheibenprobleme',
-      'Bewegungseinschränkungen nach Verletzungen',
-    ],
-    process: [
-      'Ausführliche Befundaufnahme',
-      'Analyse von Beweglichkeit und Schmerzpunkten',
-      'Gezielte manuelle Mobilisationstechniken',
-      'Ergänzende Übungen für Zuhause',
-    ],
-    benefits: [
-      'Gezielte Schmerzreduktion',
-      'Verbesserte Beweglichkeit',
-      'Individuell angepasste Behandlung',
-      'Langfristige Stabilisierung',
+      'Wir planen und realisieren komplette Elektroinstallationen für Wohn- und Gewerbeobjekte – sicher, effizient und nach aktuellen Standards.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'Installation von Steckdosen und Schaltern',
+          'Verkabelung von Gebäuden',
+          'Verteiler- und Sicherungstechnik',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Beratung und Planung', 'Fachgerechte Installation', 'Prüfung und Inbetriebnahme'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Sichere Umsetzung nach Norm', 'Individuelle Planung', 'Zukunftssichere Technik'],
+      },
     ],
   },
+
   {
     id: 1,
-    title: 'Krankengymnastik',
-    abbreviation: 'KG',
-    slug: 'krankengymnastik',
-    image: '/services/krankengymnastik.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Activity,
-    teaser:
-      'Individuelle Übungen zur Verbesserung von Beweglichkeit, Kraft und Koordination im Alltag.',
+    icon: Sun,
+    title: 'Photovoltaik',
+    slug: 'photovoltaik',
+    image: '/services/photovoltaik.png',
+    teaser: 'Eigene Energie erzeugen und nachhaltig Kosten sparen.',
     description:
-      'Die Krankengymnastik dient der gezielten Verbesserung von Beweglichkeit, Kraft und Koordination. Nach einer individuellen Analyse Ihrer Beschwerden erstellen wir einen persönlichen Therapieplan mit aktiven und passiven Übungen. Ziel ist es, Fehlhaltungen zu korrigieren, Schmerzen zu reduzieren und Ihre körperliche Leistungsfähigkeit nachhaltig zu verbessern. Die Übungen werden schrittweise angepasst und in Ihren Alltag integriert.',
-    indications: [
-      'Beschwerden nach Operationen',
-      'Chronische Rückenschmerzen',
-      'Haltungsprobleme',
-      'Gelenkbeschwerden',
-    ],
-    process: [
-      'Individuelle Analyse Ihrer Beschwerden',
-      'Erstellung eines persönlichen Therapieplans',
-      'Gezielte therapeutische Übungen',
-      'Integration in den Alltag',
-    ],
-    benefits: [
-      'Nachhaltiger Muskelaufbau',
-      'Verbesserte Körperhaltung',
-      'Mehr Stabilität im Alltag',
-      'Individuelle Betreuung',
+      'Wir planen und installieren Photovoltaikanlagen individuell auf Ihr Gebäude abgestimmt – für maximale Effizienz und Unabhängigkeit.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'Planung von PV-Anlagen',
+          'Montage von Solarmodulen',
+          'Integration von Speichersystemen',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Analyse Ihres Dachs', 'Individuelle Planung', 'Installation und Anschluss'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Reduzierte Stromkosten', 'Nachhaltige Energie', 'Mehr Unabhängigkeit'],
+      },
     ],
   },
+
   {
     id: 2,
-    title: 'Sportphysiotherapie',
-    slug: 'sportphysiotherapie',
-    image: '/services/sportphysiotherapie.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Target,
-    teaser: 'Behandlung von Sportverletzungen und Unterstützung beim Wiedereinstieg ins Training.',
+    icon: Wifi,
+    title: 'Smart Home',
+    slug: 'smart-home',
+    image: '/services/smart-home.png',
+    teaser: 'Intelligente Steuerung für mehr Komfort und Sicherheit.',
     description:
-      'Die Sportphysiotherapie richtet sich an aktive Menschen und Sportlerinnen und Sportler. Wir behandeln akute Verletzungen, Überlastungsschäden und muskuläre Dysbalancen individuell und leistungsorientiert. Neben der Rehabilitation steht die Prävention im Fokus, um zukünftige Verletzungen zu vermeiden und Ihre sportliche Leistungsfähigkeit nachhaltig zu steigern.',
-    indications: [
-      'Akute Sportverletzungen',
-      'Überlastungsschäden',
-      'Muskelverletzungen',
-      'Wettkampfvorbereitung',
-    ],
-    process: [
-      'Analyse der sportlichen Belastung',
-      'Gezielte Therapie und Mobilisation',
-      'Individuelles Aufbautraining',
-      'Return-to-Sport Planung',
-    ],
-    benefits: [
-      'Schnellere Regeneration',
-      'Verletzungsprävention',
-      'Optimierte Bewegungsabläufe',
-      'Leistungssteigerung',
+      'Wir vernetzen Ihr Zuhause und ermöglichen Ihnen die einfache Steuerung von Licht, Heizung und Sicherheitssystemen.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'Automatisierung von Beleuchtung',
+          'Steuerung von Heizung und Rollläden',
+          'Integration von Sicherheitssystemen',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Bedarfsanalyse', 'Konzeption der Lösung', 'Installation und Einrichtung'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Mehr Komfort im Alltag', 'Energieeinsparung', 'Erhöhte Sicherheit'],
+      },
     ],
   },
 
   {
     id: 3,
-    title: 'Lymphdrainage',
-    slug: 'lymphdrainage',
-    abbreviation: 'MLD',
-    image: '/services/lymphdrainage.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Waves,
-    teaser:
-      'Sanfte Therapie zur Reduktion von Schwellungen und zur Unterstützung des Lymphflusses.',
+    icon: Network,
+    title: 'Netzwerk & Kommunikation',
+    slug: 'netzwerk-kommunikation',
+    image: '/services/netzwerk.png',
+    teaser: 'Zuverlässige Netzwerktechnik für Zuhause und Unternehmen.',
     description:
-      'Die manuelle Lymphdrainage ist eine besonders schonende Behandlungstechnik zur Förderung des Lymphflusses. Durch rhythmische, kreisende Bewegungen wird der Abtransport von Gewebeflüssigkeit unterstützt und Schwellungen reduziert. Diese Therapie wird häufig nach Operationen oder bei chronischen Lymphödemen eingesetzt und wirkt zudem entspannend auf das Gewebe.',
-    indications: ['Schwellungen nach Operationen', 'Lymphödeme', 'Chronische Venenerkrankungen'],
-    process: [
-      'Befundaufnahme',
-      'Sanfte manuelle Entstauungstechniken',
-      'Individuelle Behandlungsdauer',
+      'Wir sorgen für stabile und schnelle Netzwerkverbindungen – von der Verkabelung bis zur Einrichtung moderner Systeme.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'LAN- und WLAN-Installation',
+          'Netzwerkverkabelung',
+          'Einrichtung von Routern und Systemen',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Analyse der Anforderungen', 'Planung der Infrastruktur', 'Installation und Test'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Stabile Verbindung', 'Hohe Geschwindigkeit', 'Zukunftssichere Technik'],
+      },
     ],
-    benefits: ['Reduzierung von Schwellungen', 'Schmerzlinderung', 'Sanfte, entspannende Wirkung'],
   },
+
   {
     id: 4,
-    title: 'Krankengymnastik am Gerät',
-    slug: 'krankengymnastik-am-geraet',
-    abbreviation: 'KGG',
-    image: '/services/krankengymnastik-am-geraet.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Dumbbell,
-    teaser:
-      'Gerätegestütztes Training zum Muskelaufbau und zur Stabilisierung des Bewegungsapparates.',
+    icon: Wrench,
+    title: 'Wartung & Service',
+    slug: 'wartung-service',
+    image: '/services/wartung.png',
+    teaser: 'Schnelle Hilfe und regelmäßige Wartung für Ihre Anlagen.',
     description:
-      'Die gerätegestützte Krankengymnastik kombiniert moderne medizinische Trainingsgeräte mit physiotherapeutischer Betreuung. Durch kontrollierte Belastung werden gezielt geschwächte Muskelgruppen aufgebaut und Gelenke stabilisiert. Besonders nach Operationen oder Verletzungen unterstützt diese Therapieform die sichere und strukturierte Rückkehr zur vollen Belastbarkeit.',
-    indications: [
-      'Rehabilitation nach Operationen',
-      'Muskelabbau',
-      'Rückenschmerzen',
-      'Instabilität der Gelenke',
-    ],
-    process: [
-      'Leistungsanalyse',
-      'Individuelle Geräteeinstellung',
-      'Strukturiertes Training',
-      'Kontinuierliche Anpassung der Belastung',
-    ],
-    benefits: [
-      'Gezielter Muskelaufbau',
-      'Verbesserte Belastbarkeit',
-      'Kontrollierte Trainingsbedingungen',
-      'Nachhaltige Rehabilitation',
+      'Wir übernehmen Wartung, Prüfung und Reparatur Ihrer elektrischen Anlagen – zuverlässig und schnell vor Ort.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: ['Fehlersuche und Reparatur', 'Regelmäßige Wartung', 'Sicherheitsprüfungen'],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Analyse des Problems', 'Schnelle Behebung', 'Abschließende Prüfung'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Schnelle Hilfe', 'Hohe Betriebssicherheit', 'Weniger Ausfälle'],
+      },
     ],
   },
+
   {
     id: 5,
-    title: 'Neurologische Therapie',
-    slug: 'neurologische-therapie',
-    image: '/services/neurologische-therapie.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Brain,
-    teaser: 'Individuelle Therapie zur Verbesserung von Bewegungsabläufen und Koordination.',
+    icon: Lightbulb,
+    title: 'Beleuchtungstechnik',
+    slug: 'beleuchtungstechnik',
+    image: '/services/beleuchtung.png',
+    teaser: 'Individuelle Lichtlösungen für Innen- und Außenbereiche.',
     description:
-      'Die neurologische Therapie unterstützt Patientinnen und Patienten mit Erkrankungen des Nervensystems wie Schlaganfall, Parkinson oder Multipler Sklerose. Ziel ist es, Bewegungsabläufe zu verbessern, Gleichgewicht zu fördern und Alltagsfunktionen wiederherzustellen. Die Therapie wird individuell angepasst und auf langfristige Stabilisierung ausgerichtet.',
-    indications: ['Schlaganfall', 'Parkinson', 'Multiple Sklerose'],
-    process: [
-      'Individuelle neurologische Analyse',
-      'Gezielte Bewegungsübungen',
-      'Koordinationstraining',
-    ],
-    benefits: [
-      'Verbesserte Bewegungsabläufe',
-      'Mehr Selbstständigkeit',
-      'Langfristige Stabilisierung',
+      'Wir planen und realisieren Beleuchtungskonzepte, die Funktionalität und Design optimal verbinden.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: ['Innen- und Außenbeleuchtung', 'LED-Umrüstung', 'Lichtplanung'],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Beratung und Konzept', 'Auswahl der Leuchten', 'Installation vor Ort'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Energieeffiziente Lösungen', 'Angenehmes Licht', 'Individuelles Design'],
+      },
     ],
   },
   {
     id: 6,
-    title: 'Klassische Massage',
-    abbreviation: 'KMT',
-    slug: 'klassische-massage',
-    image: '/services/klassische-massage.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Sparkles,
-    teaser:
-      'Lockerung verspannter Muskulatur und Förderung der Durchblutung bei muskulären Beschwerden.',
+    icon: Zap,
+    title: 'E-Mobilität',
+    slug: 'e-mobilitaet',
+    image: '/services/e-mobilitaet.png',
+    teaser: 'Ladelösungen für Elektrofahrzeuge – bequem und zukunftssicher.',
     description:
-      'Die klassische Massage dient der Lockerung verspannter Muskulatur und der Verbesserung der Durchblutung. Durch gezielte Grifftechniken wie Knetungen, Streichungen und Druckbewegungen werden Muskelverhärtungen gelöst und Schmerzen reduziert. Die Behandlung eignet sich besonders bei Verspannungen im Nacken-, Schulter- und Rückenbereich sowie bei stressbedingten Beschwerden. Neben der therapeutischen Wirkung wirkt die Massage entspannend auf Körper und Nervensystem.',
-    indications: [
-      'Muskelverspannungen',
-      'Stressbedingte Beschwerden',
-      'Rücken- und Nackenschmerzen',
+      'Wir planen und installieren moderne Ladelösungen für Ihr Zuhause oder Unternehmen. Von der Wallbox bis zur kompletten Ladeinfrastruktur.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'Installation von Wallboxen',
+          'Ladeinfrastruktur für Unternehmen',
+          'Integration in bestehende Systeme',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: [
+          'Beratung und Bedarfsanalyse',
+          'Planung der Ladepunkte',
+          'Installation und Inbetriebnahme',
+        ],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: [
+          'Bequemes Laden zuhause',
+          'Zukunftssichere Technik',
+          'Wertsteigerung der Immobilie',
+        ],
+      },
     ],
-    process: [
-      'Analyse der Verspannungen',
-      'Gezielte Massagegriffe',
-      'Individuelle Anpassung der Intensität',
-    ],
-    benefits: ['Lockerung der Muskulatur', 'Verbesserte Durchblutung', 'Tiefe Entspannung'],
   },
+
   {
     id: 7,
-    title: 'Triggerpunkttherapie',
-    slug: 'triggerpunkttherapie',
-    image: '/services/triggerpunkttherapie.png',
-    images: ['/features/feature-04.png', '/praxis/praxis-02.png', '/features/feature-03.png'],
-    icon: Sparkles,
-    teaser:
-      'Gezielte Behandlung von Muskelverhärtungen zur Reduktion lokaler und ausstrahlender Schmerzen.',
+    icon: Wifi,
+    title: 'Türkommunikation',
+    slug: 'tuerkommunikation',
+    image: '/services/tuerkommunikation.png',
+    teaser: 'Moderne Klingel- und Sprechanlagen für mehr Sicherheit.',
     description:
-      'Die Triggerpunkttherapie konzentriert sich auf die Behandlung sogenannter myofaszialer Triggerpunkte – verhärtete, druckempfindliche Bereiche in der Muskulatur. Diese können lokale oder ausstrahlende Schmerzen verursachen. Durch gezielten Druck und spezielle Techniken werden die betroffenen Muskelbereiche gelöst, die Durchblutung verbessert und Schmerzen reduziert. Die Therapie eignet sich besonders bei chronischen Verspannungen, Kopfschmerzen oder muskulären Dysbalancen.',
-    indications: ['Chronische Verspannungen', 'Kopfschmerzen', 'Ausstrahlende Muskelschmerzen'],
-    process: [
-      'Lokalisierung der Triggerpunkte',
-      'Gezielte Drucktechniken',
-      'Nachbehandlung zur Stabilisierung',
+      'Wir installieren und modernisieren Türkommunikationssysteme – von klassischen Klingelanlagen bis zu smarten Video-Lösungen.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'Klingel- und Gegensprechanlagen',
+          'Video-Türsprechanlagen',
+          'Integration ins Smart Home',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: [
+          'Beratung und Auswahl des Systems',
+          'Installation und Einrichtung',
+          'Einweisung in die Nutzung',
+        ],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Mehr Sicherheit', 'Komfortable Bedienung', 'Moderne Technik'],
+      },
     ],
-    benefits: [
-      'Gezielte Schmerzreduktion',
-      'Verbesserte Beweglichkeit',
-      'Lösung tiefer Muskelverhärtungen',
+  },
+
+  {
+    id: 8,
+    icon: Wrench,
+    title: 'Altbausanierung',
+    slug: 'altbausanierung',
+    image: '/services/altbau.png',
+    teaser: 'Erneuerung veralteter Elektroinstallationen für mehr Sicherheit.',
+    description:
+      'Wir modernisieren bestehende Elektroanlagen in Altbauten und bringen diese auf den neuesten Stand der Technik.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'Erneuerung von Leitungen',
+          'Modernisierung von Sicherungskästen',
+          'Anpassung an aktuelle Normen',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Bestandsaufnahme', 'Planung der Sanierung', 'Schrittweise Umsetzung'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Mehr Sicherheit', 'Zukunftssichere Installation', 'Wertsteigerung der Immobilie'],
+      },
+    ],
+  },
+
+  {
+    id: 9,
+    icon: Zap,
+    title: 'E-Check',
+    slug: 'e-check',
+    image: '/services/e-check.png',
+    teaser: 'Sicherheitsprüfung Ihrer Elektroanlagen und Geräte.',
+    description:
+      'Mit dem E-Check prüfen wir Ihre elektrischen Anlagen und Geräte auf Sicherheit und Funktion – für ein gutes Gefühl im Alltag.',
+
+    sections: [
+      {
+        title: 'Leistungen',
+        items: [
+          'Prüfung elektrischer Anlagen',
+          'Überprüfung von Geräten',
+          'Dokumentation der Ergebnisse',
+        ],
+      },
+      {
+        title: 'Ablauf',
+        items: ['Vor-Ort Prüfung', 'Messungen und Analyse', 'Auswertung und Bericht'],
+      },
+      {
+        title: 'Ihre Vorteile',
+        items: ['Erhöhte Sicherheit', 'Früherkennung von Schäden', 'Nachweis für Versicherungen'],
+      },
     ],
   },
 ]

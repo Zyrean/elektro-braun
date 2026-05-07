@@ -1,18 +1,17 @@
-import CtaCenter from '@/components/sections/cta/CtaCenter'
-import FeatureZickZackBigImage from '@/components/sections/features/FeatureZickZackBigImage'
-import HeroSimpleCentered from '@/components/sections/hero/HeroSimpleCentered'
-import ServicePhilosophy from '@/components/sections/services/ServicePhilosophy'
-import ServiceSimpleGridReadMore from '@/components/sections/services/ServiceSimpleGridReadMore'
-import { TeamTeaser } from '@/components/sections/team/TeamTeaser'
 import TestimonialsGridHighlight from '@/components/sections/testimonials/TestimonialsGridHighlight'
-import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { Text } from '@/components/ui/Text'
-import { CalendarCheck, ShieldCheck } from 'lucide-react'
-
 import type { Metadata } from 'next'
 import { COMPANY } from '@/data/company'
 import { SITE_URL } from '@/data/helper'
+import HeroSimpleCenteredGallery from '@/components/sections/hero/HeroSimpleCenteredGallery'
+import { Heading } from '@/components/ui/Heading'
+import ServiceGridImage from '@/components/sections/services/ServiceGridImage'
+import StatsSimpleGrid from '@/components/sections/stats/StatsSimpleGrid'
+import { FeatureIconGrid } from '@/components/sections/features/FeatureIconGrid'
+import PartnerSimple from '@/components/sections/partners/PartnerSimple'
+import ReferencesColumnBackgroundImage from '@/components/sections/references/ReferencesColumnBackgroundImage'
+import CtaImage from '@/components/sections/cta/CtaImage'
 
 export const metadata: Metadata = {
   title: `Physiotherapie in ${COMPANY.address.city} | ${COMPANY.name}`,
@@ -56,66 +55,80 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <HeroSimpleCentered
-        src="/home-hero.png"
-        srcDesktop="/home-hero-right.png"
-        alt="Physiotherapie Behandlung in Emmendingen"
+      <HeroSimpleCenteredGallery
+        alt="Physiotherapie"
+        images={[
+          '/home-hero-1.png',
+          '/home-hero-2.png',
+          '/home-hero-3.png',
+          '/home-hero-4.png',
+          '/home-hero-5.png',
+          '/home-hero-6.png',
+        ]}
       >
-        <h1 className="max-w-xl text-4xl leading-tight text-white sm:text-6xl lg:text-7xl">
-          Physiotherapie in Emmendingen
-        </h1>
+        <Heading as="h1" className="my-6 max-w-xl text-white">
+          <span className="text-primary">Ihre Experten</span> für Elektrotechnik und Photovoltaik.
+        </Heading>
 
-        <Text className="mt-6 max-w-md text-white">
-          Ob nach einer Verletzung, bei Schmerzen im Alltag oder zur Vorbeugung – wir begleiten Sie
-          individuell auf Ihrem Weg zurück zu mehr Beweglichkeit und Wohlbefinden.
+        {/* <div className="flex flex-col gap-3 text-white">
+          <div className="flex items-center gap-2">
+            <Check className="h-4 w-4" />
+            <p>Über 28 Jahre Erfahrung</p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <Check className="h-4 w-4" />
+            <p>Über 5.000 Projekte umgesetzt</p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <Check className="h-4 w-4" />
+            <p>Zuverlässig & termingerecht</p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <Check className="h-4 w-4" />
+            <p>Privat & Gewerbe</p>
+          </div>
+        </div> */}
+
+        <Text className="max-w-md text-white">
+          Ob Neubau, Sanierung oder Reparatur – wir stehen Ihnen mit moderner Elektrotechnik und
+          zuverlässigem Service zur Seite. Von der Planung bis zur Umsetzung sorgen wir für sichere
+          und zukunftsfähige Lösungen rund um Ihr Zuhause oder Unternehmen.
         </Text>
 
-        <div className="mt-5 flex items-center justify-center gap-3 sm:flex-row sm:justify-start sm:gap-3">
-          <Badge
-            variant="glass"
-            color="white"
-            shape="pill"
-            icon={<CalendarCheck className="h-3.5 w-3.5" />}
-          >
-            Termine kurzfristig
-          </Badge>
+        <Button href="/kontakt#contact-form" className="mt-8 px-6">
+          Unverbindlich beraten lassen
+        </Button>
+      </HeroSimpleCenteredGallery>
 
-          <Badge
-            variant="glass"
-            color="white"
-            shape="pill"
-            icon={<ShieldCheck className="h-3.5 w-3.5" />}
-          >
-            Gesetzlich & privat
-          </Badge>
-        </div>
+      <StatsSimpleGrid
+        belowHero={true}
+        title="Erfahrung, auf die man sich verlassen kann"
+        subtitle="Als regionaler Fachbetrieb begleiten wir seit vielen Jahren Projekte im Bereich Elektrotechnik – zuverlässig, persönlich und mit hohem Qualitätsanspruch."
+      />
 
-        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-          <Button href="/kontakt#contact-form" className="px-6">
-            Termin vereinbaren
-          </Button>
-
-          {/* <Button href="/leistungen" variant="outline" className="bg-primary/20">
-            Leistungen ansehen
-          </Button> */}
-        </div>
-      </HeroSimpleCentered>
-
-      <ServicePhilosophy />
-
-      <ServiceSimpleGridReadMore />
-      <FeatureZickZackBigImage />
-      <TeamTeaser />
+      <ServiceGridImage
+        limit={6}
+        title="Unsere Leistungen"
+        subtitle="Moderne Elektrotechnik für Privat- und Geschäftskunden – zuverlässig, sicher und individuell auf Ihre Anforderungen abgestimmt."
+      />
+      <FeatureIconGrid limit={3} />
+      <ReferencesColumnBackgroundImage
+        limit={6}
+        title="Ausgewählte Projekte"
+        subtitle="Ein Einblick in unsere Arbeit – von der Planung bis zur Umsetzung zuverlässig realisiert."
+      />
+      <PartnerSimple />
       <TestimonialsGridHighlight />
-      {/* <CtaDefault /> */}
-
-      <CtaCenter
-        title="Jetzt Termin vereinbaren"
-        text=" Egal ob akute Beschwerden oder präventive Behandlung – wir unterstützen Sie dabei, Ihre Beweglichkeit zu verbessern und Schmerzen gezielt zu reduzieren."
-        primaryLabel="Termin vereinbaren"
+      <CtaImage
+        title="Vereinbaren Sie jetzt Ihren Termin"
+        text="Moderne Physiotherapie für mehr Beweglichkeit..."
+        primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
-        secondaryLabel="Leistungen"
-        secondaryHref="/leistungen#services"
+        secondaryLabel="Leistungen ansehen"
+        secondaryHref="/leistungen"
       />
     </>
   )

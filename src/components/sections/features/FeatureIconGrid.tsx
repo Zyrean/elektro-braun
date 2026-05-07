@@ -5,20 +5,29 @@ import { SectionHeader } from '@/components/ui/SectionHeader'
 import { Text } from '@/components/ui/Text'
 import { features } from '@/data/features'
 
-export function FeatureIconGrid() {
+type FeatureIconGridProps = {
+  limit?: number
+  title?: string
+  subtitle?: string
+}
+
+export function FeatureIconGrid({ limit, title, subtitle }: FeatureIconGridProps) {
+  const displayedFeatures = limit !== undefined ? features.slice(0, limit) : features
+
   return (
-    <AppSection top="sm">
+    <AppSection>
       <AppContainer>
         <SectionHeader
-          title="Physiotherapie, die wirklich zu Ihnen passt"
-          subtitle=" Viele Behandlungen bleiben oberflächlich. Wir gehen einen Schritt weiter – mit Zeit,
-            klarer Struktur und einem Fokus auf nachhaltige Ergebnisse."
+          title={title || 'Elektrotechnik, auf die Sie sich verlassen können'}
+          subtitle={
+            subtitle || 'Zuverlässige Elektrotechnik – modern, sicher und individuell umgesetzt.'
+          }
         />
 
-        <ul className="grid gap-10 md:grid-cols-3">
-          {features.map((feature) => (
-            <li key={feature.id} className="mx-auto text-center">
-              <div className="bg-primary/10 mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
+        <ul className="grid gap-14 text-center md:grid-cols-3">
+          {displayedFeatures.map((feature) => (
+            <li key={feature.id} className="flex flex-col items-center">
+              <div className="bg-primary/10 mb-4 flex h-12 w-12 items-center justify-center rounded-lg">
                 <feature.icon className="text-primary h-6 w-6" />
               </div>
 
@@ -26,7 +35,7 @@ export function FeatureIconGrid() {
                 {feature.header}
               </Heading>
 
-              <Text color="muted" size="sm" className="max-w-xs">
+              <Text color="muted" size="sm" className="max-w-80">
                 {feature.description}
               </Text>
             </li>

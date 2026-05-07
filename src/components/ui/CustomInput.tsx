@@ -33,7 +33,7 @@ function CustomInput({
         required={required}
         disabled={disabled}
         className={cn(
-          'focus:border-primary focus:ring-primary border-border block w-full appearance-none rounded-lg border bg-white p-2.5 transition-colors duration-200 focus:outline-hidden sm:text-sm',
+          'border-border focus:border-primary block w-full appearance-none rounded-lg border bg-white p-2.5 transition-colors duration-200 focus:ring-0 focus:outline-none sm:text-sm',
           meta.touched &&
             meta.error &&
             'border-destructive focus:border-destructive focus:ring-destructive',

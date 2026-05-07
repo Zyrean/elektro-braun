@@ -2,17 +2,19 @@ import { AppContainer } from '@/components/ui/AppContainer'
 import { AppSection } from '@/components/ui/AppSection'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { Text } from '@/components/ui/Text'
-import { faqs } from '@/data/faqs'
+import { Faq } from '@/types/general'
 
-function FaqSideBySide() {
+interface FaqSideBySideProps {
+  faqs: Faq[]
+  title?: string
+  subtitle?: string
+}
+
+function FaqSideBySide({ faqs, title, subtitle }: FaqSideBySideProps) {
   return (
     <AppSection>
       <AppContainer>
-        <SectionHeader
-          className="mb-16"
-          title="Häufige Fragen zur Physiotherapie"
-          subtitle="Antworten auf häufige Fragen zu Ablauf, Rezepten und organisatorischen Themen."
-        />
+        <SectionHeader className="mb-16" title={title} subtitle={subtitle} />
         <dl className="divide-muted/20 divide-y">
           {faqs.map((faq) => (
             <div

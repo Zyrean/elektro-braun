@@ -1,30 +1,30 @@
 import { SiInstagram, SiYoutube, SiFacebook } from 'react-icons/si'
 
 export const COMPANY = {
-  name: 'Physio Balance',
-  legalName: 'Physio Balance GmbH',
-  email: 'info@physio-balance.de',
-  website: 'https://www.physio-balance.de',
+  name: 'Elektro Braun',
+  legalName: 'Elektro Braun GmbH',
+  email: 'info@elektro-braun.de',
+  website: 'https://www.elektro-braun.de',
 
   register: {
     court: 'Amtsgericht Freiburg',
-    number: 'HRB 718392',
+    number: 'HRB 723845',
   },
 
   legal: {
-    managingDirector: 'Lukas Weber',
-    vatId: 'DE298374651',
+    managingDirector: 'Thomas Braun',
+    vatId: 'DE312948576',
   },
 
   phone: {
-    raw: '07641927461',
-    display: '07641 927 461',
+    raw: '07641938475',
+    display: '07641 938 475',
   },
 
   address: {
-    street: 'Hochburger Straße 15',
-    city: 'Emmendingen',
-    zip: '79312',
+    street: 'Dorfstraße 8',
+    city: 'Buchholz',
+    zip: '79183',
     country: 'Deutschland',
   },
 
@@ -47,7 +47,7 @@ export const COMPANY = {
   ],
 
   openingHours: {
-    week: '08:00 – 18:00',
+    week: '07:30 – 17:00',
     saturday: 'Geschlossen',
     sunday: 'Geschlossen',
   },
@@ -60,4 +60,4 @@ export const COMPANY_GOOGLE_MAPS = `https://www.google.com/maps/search/?api=1&qu
 export const COMPANY_GOOGLE_MAPS_ROUTE = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(COMPANY_FULL_ADDRESS)}`
 
 export const COMPANY_GOOGLE_MAPS_EMBED =
-  'https://www.google.com/maps?q=Hochburger+Stra%C3%9Fe+15,+79312+Emmendingen&output=embed'
+  'https://www.google.com/maps?q=Dorfstra%C3%9Fe+8,+79183+Buchholz&output=embed'

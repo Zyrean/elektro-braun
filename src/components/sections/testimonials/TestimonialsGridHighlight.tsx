@@ -18,8 +18,8 @@ export default function TestimonialsGridHighlight() {
     <AppSection>
       <AppContainer>
         <SectionHeader
-          title="Erfahrungsberichte"
-          subtitle="Das sagen unsere Patientinnen und Patienten."
+          title="Kundenstimmen"
+          subtitle="Das sagen unsere Kundinnen und Kunden über unsere Arbeit."
         />
         <GoogleReviews />
 

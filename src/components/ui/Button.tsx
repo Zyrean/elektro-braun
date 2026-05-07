@@ -37,7 +37,7 @@ export function Button({
   const minWidth = variant === 'solid' && color === 'primary' ? 'min-w-40' : ''
 
   const base =
-    'inline-flex gap-2 items-center justify-center rounded-lg font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer'
+    'inline-flex gap-2 items-center justify-center rounded-sm font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer'
 
   const variants: Record<ButtonVariant, Record<ButtonColor, string>> = {
     solid: {
