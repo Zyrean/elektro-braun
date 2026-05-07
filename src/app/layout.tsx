@@ -5,7 +5,6 @@ import { Poppins, Manrope } from 'next/font/google'
 import AppHeader from '@/components/ui/AppHeader'
 import AppFooter from '@/components/ui/AppFooter'
 
-// 🟣 Modern / Startup / etwas mehr Persönlichkeit - leicht rund, aber strukturierter als Quicksand
 export const fontPoppins = Poppins({
   subsets: ['latin'],
   variable: '--font-sans',
@@ -13,7 +12,6 @@ export const fontPoppins = Poppins({
   display: 'swap',
 })
 
-// ⚫ Premium Clean / hochwertig / minimalistisch - sehr smooth, moderner als Inter
 export const fontManrope = Manrope({
   subsets: ['latin'],
   variable: '--font-sans',
