@@ -70,28 +70,6 @@ export default function Home() {
           <span className="text-primary">Ihre Experten</span> für Elektrotechnik und Photovoltaik.
         </Heading>
 
-        {/* <div className="flex flex-col gap-3 text-white">
-          <div className="flex items-center gap-2">
-            <Check className="h-4 w-4" />
-            <p>Über 28 Jahre Erfahrung</p>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Check className="h-4 w-4" />
-            <p>Über 5.000 Projekte umgesetzt</p>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Check className="h-4 w-4" />
-            <p>Zuverlässig & termingerecht</p>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Check className="h-4 w-4" />
-            <p>Privat & Gewerbe</p>
-          </div>
-        </div> */}
-
         <Text className="max-w-md text-white">
           Ob Neubau, Sanierung oder Reparatur – wir stehen Ihnen mit moderner Elektrotechnik und
           zuverlässigem Service zur Seite. Von der Planung bis zur Umsetzung sorgen wir für sichere
@@ -115,16 +93,18 @@ export default function Home() {
         subtitle="Moderne Elektrotechnik für Privat- und Geschäftskunden – zuverlässig, sicher und individuell auf Ihre Anforderungen abgestimmt."
       />
       <FeatureIconGrid limit={3} />
+
       <ReferencesColumnBackgroundImage
         limit={6}
         title="Ausgewählte Projekte"
         subtitle="Ein Einblick in unsere Arbeit – von der Planung bis zur Umsetzung zuverlässig realisiert."
       />
+
       <PartnerSimple />
       <TestimonialsGridHighlight />
       <CtaImage
-        title="Vereinbaren Sie jetzt Ihren Termin"
-        text="Moderne Physiotherapie für mehr Beweglichkeit..."
+        title="Moderne Elektrotechnik aus der Region"
+        text="Wir begleiten private und gewerbliche Projekte mit zuverlässiger Planung, sauberer Ausführung und persönlicher Beratung."
         primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
         secondaryLabel="Leistungen ansehen"

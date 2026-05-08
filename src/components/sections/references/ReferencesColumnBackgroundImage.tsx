@@ -8,6 +8,8 @@ import { ArrowRight, Circle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
+
 interface ReferencesColumnBackgroundImageProps {
   limit?: number
   showButton?: boolean
@@ -23,7 +25,9 @@ export default function ReferencesColumnBackgroundImage({
   subtitle,
   belowHero = false,
 }: ReferencesColumnBackgroundImageProps) {
-  const slicedReferences = limit ? references.slice(0, limit) : references
+  const desktopReferences = limit ? references.slice(0, limit) : references
+
+  const mobileReferences = references
 
   const checkBelowHero = belowHero ? 'lg' : 'none'
 
@@ -32,8 +36,55 @@ export default function ReferencesColumnBackgroundImage({
       <AppContainer>
         <SectionHeader title={title} subtitle={subtitle} />
 
-        <div className="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {slicedReferences.map((reference) => (
+        <div className="md:hidden">
+          <Carousel
+            opts={{
+              align: 'start',
+            }}
+          >
+            <CarouselContent className="-ml-4">
+              {mobileReferences.map((reference) => (
+                <CarouselItem key={reference.id} className="">
+                  <Link
+                    href={`/referenzen/${reference.slug}`}
+                    className="block transition duration-300"
+                  >
+                    <article className="relative isolate flex h-full min-h-89.5 flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pt-56 pb-8">
+                      <Image
+                        alt={reference.image.alt}
+                        src={reference.image.src}
+                        className="absolute inset-0 -z-10 size-full object-cover"
+                        fill
+                      />
+
+                      <div className="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40" />
+
+                      <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-gray-900/10 ring-inset" />
+
+                      <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-white">
+                        <time dateTime={reference.period} className="mr-2">
+                          {reference.period}
+                        </time>
+
+                        <div className="flex items-center gap-x-2">
+                          <Circle fill="white" size={4} />
+                          <p>{reference.location}</p>
+                        </div>
+                      </div>
+
+                      <Heading as="h3" size="sm" className="mt-2.5 text-white">
+                        {reference.name}
+                      </Heading>
+                    </article>
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
+
+        <div className="mx-auto hidden max-w-2xl auto-rows-fr grid-cols-1 gap-8 md:grid lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {desktopReferences.map((reference) => (
             <Link
               key={reference.id}
               href={`/referenzen/${reference.slug}`}

@@ -71,7 +71,7 @@ export default function ContactFormImage() {
   }
 
   return (
-    <AppSection id="contact-form" className="relative scroll-mt-15 lg:scroll-mt-30" top="sm">
+    <AppSection id="contact-form" className="relative scroll-mt-15 lg:scroll-mt-30">
       <AppContainer>
         <div className="relative">
           <div className="lg:absolute lg:inset-0 lg:left-1/2">
@@ -83,7 +83,7 @@ export default function ContactFormImage() {
           </div>
 
           <div className="pt-16 sm:pt-24 sm:pb-32 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-0 lg:pb-0">
-            <div className="px-6 lg:px-8">
+            <div className="px-2 lg:px-8">
               <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                 <SectionHeader
                   title="Termin anfragen"

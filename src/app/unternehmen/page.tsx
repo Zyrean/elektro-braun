@@ -64,8 +64,8 @@ function ServicePage() {
       />
 
       <CtaImage
-        title="Ihr Projekt in guten Händen"
-        text="Mit moderner Elektrotechnik, langjähriger Erfahrung und zuverlässigem Service unterstützen wir Privat- und Gewerbekunden bei individuellen Lösungen rund um Energie und Gebäudetechnik."
+        title="Persönlich. Zuverlässig. Regional."
+        text="Als moderner Fachbetrieb stehen wir für hochwertige Elektrotechnik und partnerschaftliche Zusammenarbeit."
         primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
         secondaryLabel="Leistungen ansehen"

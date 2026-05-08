@@ -78,8 +78,8 @@ function ServicePage() {
       />
 
       <CtaImage
-        title="Starten Sie jetzt Ihr Elektroprojekt"
-        text="Ob Neubau, Sanierung oder moderne Energielösungen – wir begleiten Sie von der Planung bis zur Umsetzung zuverlässig und fachgerecht."
+        title="Die passende Lösung für Ihr Projekt"
+        text="Von Elektroinstallationen bis Photovoltaik – wir unterstützen Sie mit moderner Technik und langjähriger Erfahrung."
         primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
         secondaryLabel="Referenzen ansehen"

@@ -65,7 +65,7 @@ export default function MobileMenu({ navigation, isHomepage }: MobileMenuProps) 
 
             <div className="border-border border-t pt-7">
               <Button href="/kontakt" onClick={() => setOpen(false)} className="w-full">
-                Termin buchen
+                Kontakt aufnehmen
               </Button>
             </div>
           </div>
