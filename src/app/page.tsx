@@ -95,6 +95,7 @@ export default function Home() {
       <FeatureIconGrid limit={3} />
 
       <ReferencesColumnBackgroundImage
+        mobileCarousel={true}
         limit={6}
         title="Ausgewählte Projekte"
         subtitle="Ein Einblick in unsere Arbeit – von der Planung bis zur Umsetzung zuverlässig realisiert."

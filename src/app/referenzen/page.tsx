@@ -31,6 +31,7 @@ function ReferencePage() {
       </HeroTwoCards>
 
       <ReferencesColumnBackgroundImage
+        mobileCarousel={false}
         belowHero={true}
         showButton={false}
         title="Unsere Referenzen"

@@ -46,7 +46,7 @@ export default function MobileMenu({ navigation, isHomepage }: MobileMenuProps) 
 
         {/* CONTENT */}
         <div className="relative z-10 flex h-fit flex-col">
-          <div className="bg-background flex h-20 items-center justify-between px-4 shadow-sm">
+          <div className="bg-background flex h-22 items-center justify-between px-4 shadow-sm">
             <Logo onClick={() => setOpen(false)} />
 
             <button onClick={() => setOpen(false)} className="p-2" aria-label="Menü schlißen">

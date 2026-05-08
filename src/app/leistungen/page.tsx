@@ -66,6 +66,7 @@ function ServicePage() {
       <ServiceProcessSteps />
 
       <ReferencesColumnBackgroundImage
+        mobileCarousel={true}
         limit={3}
         title="Ausgewählte Projekte"
         subtitle="Ein Einblick in unsere Arbeit – von der Planung bis zur Umsetzung zuverlässig realisiert."
