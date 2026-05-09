@@ -55,7 +55,7 @@ function ServicePage() {
         belowHero={true}
         showButton={false}
         title="Unsere Leistungen im Detail"
-        subtitle="Von der klassischen Elektroinstallation bis hin zu modernen Energielösungen – wir bieten Ihnen durchdachte und zuverlässige Lösungen für jedes Projekt."
+        subtitle="Von Elektroinstallationen bis Photovoltaik – moderne Lösungen für Ihr Zuhause oder Unternehmen."
       />
 
       <FeatureIconGrid

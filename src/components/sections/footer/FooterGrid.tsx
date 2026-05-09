@@ -7,15 +7,15 @@ import { footerNavigation } from '@/data/footerNavigation'
 import Link from 'next/link'
 
 function FooterGrid() {
-  const headerStyle = 'mb-3 font-semibold uppercase'
+  const headerStyle = 'mb-3 font-semibold uppercase text-white'
 
   return (
-    <footer className="bg-background border-border border-t shadow-sm">
+    <footer className="border-border bg-accent border-t shadow-sm">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 lg:px-8">
         <div className="w-full lg:flex lg:justify-between">
           <div className="mb-8 flex flex-col items-center space-y-6 lg:mb-0 lg:items-start">
             <Logo />
-            <Text className="max-w-60 text-center lg:text-start">
+            <Text className="max-w-60 text-center text-white lg:text-start">
               Ihr Partner für Elektroinstallation, Smart Home und moderne Energielösungen.
             </Text>
             <div className="flex gap-x-6">
@@ -24,7 +24,7 @@ function FooterGrid() {
                   <span className="sr-only">{item.name}</span>
                   <item.icon
                     aria-hidden="true"
-                    className="text-muted hover:text-primary size-5 transition"
+                    className="hover:text-primary size-5 text-white transition"
                   />
                 </a>
               ))}
@@ -32,7 +32,7 @@ function FooterGrid() {
           </div>
 
           <div className="flex flex-col items-center justify-between gap-8 sm:items-baseline md:flex-row md:justify-center md:gap-16 lg:items-start lg:pr-10">
-            <div className="mt-8 flex flex-col gap-x-6 gap-y-1 text-center sm:w-40 lg:mt-0">
+            <div className="mt-8 flex flex-col gap-x-6 gap-y-1 text-center text-white sm:w-40 lg:mt-0">
               <Heading as="h5" className={headerStyle}>
                 {COMPANY.name}
               </Heading>
@@ -51,7 +51,7 @@ function FooterGrid() {
                 Öffnungszeiten
               </Heading>
 
-              <div className="mx-auto flex w-full flex-col gap-y-1.5 text-start font-normal">
+              <div className="mx-auto flex w-full flex-col gap-y-1.5 text-start font-normal text-white">
                 <div className="flex justify-between">
                   <p>Mo – Fr:</p>
                   <p>{COMPANY.openingHours.week}</p>
@@ -69,7 +69,7 @@ function FooterGrid() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-x-6 gap-y-1 text-center sm:w-40">
+            <div className="flex flex-col gap-x-6 gap-y-1 text-center text-white sm:w-40">
               <Heading as="h5" className={headerStyle}>
                 Kontakt
               </Heading>
@@ -96,11 +96,11 @@ function FooterGrid() {
           </div>
         </div>
         <div className="border-border mt-16 border-t pt-8 text-center sm:text-left">
-          <Text size="sm" className="font-medium">
+          <Text size="sm" className="font-medium text-white">
             &copy; {YEAR} {COMPANY.name}. Alle Rechte vorbehalten.
           </Text>
 
-          <Text size="xs">
+          <Text size="xs" className="text-white">
             Webseite von{' '}
             <a
               href="https://www.swapp-gmbh.de/"

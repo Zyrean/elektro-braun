@@ -12,7 +12,7 @@ export default function TeamGridMax() {
       <AppContainer>
         <SectionHeader
           title="Das Team hinter Elektro Braun"
-          subtitle="Mit Erfahrung, Engagement und technischem Know-how begleiten wir Projekte für Privat- und Gewerbekunden – von der Planung bis zur Umsetzung."
+          subtitle="Mit Erfahrung und technischem Know-how begleiten wir Projekte zuverlässig von der Planung bis zur Umsetzung."
         />
 
         <ul

@@ -33,10 +33,7 @@ export function SectionHeader({
         <Text
           size="base"
           color="muted"
-          className={cn(
-            'mt-3 text-pretty lg:text-lg',
-            centered && 'mx-auto max-w-[34ch] md:max-w-[42ch] lg:max-w-[48ch]',
-          )}
+          className={cn('mt-3 text-pretty lg:text-lg', centered && 'mx-auto max-w-60 sm:max-w-xl')}
         >
           {subtitle}
         </Text>

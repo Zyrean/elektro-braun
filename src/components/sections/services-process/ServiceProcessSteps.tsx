@@ -9,12 +9,15 @@ function ServiceProcessSteps() {
   return (
     <AppSection id="services" className="scroll-mt-30 lg:scroll-mt-40">
       <AppContainer>
-        <SectionHeader title="Ablauf Ihres Projekts" />
+        <SectionHeader
+          title="Ablauf Ihres Projekts"
+          subtitle="Von der ersten Beratung bis zur fertigen Umsetzung begleiten wir Ihr Projekt zuverlässig und strukturiert."
+        />
 
         <div className="mx-auto max-w-3xl space-y-10">
           {servicesSteps.map((step, index) => (
             <div key={step.title} className="relative flex gap-4">
-              <div className="text-primary mt-0.5 text-xl font-medium">
+              <div className="text-primary text-xl font-medium">
                 {String(index + 1).padStart(2, '0')}
               </div>
 

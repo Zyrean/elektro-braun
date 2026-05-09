@@ -18,7 +18,7 @@ export function FeatureIconGrid({ limit, title, subtitle }: FeatureIconGridProps
     <AppSection>
       <AppContainer>
         <SectionHeader
-          title={title || 'Elektrotechnik, auf die Sie sich verlassen können'}
+          title={title || 'Zuverlässige Elektrotechnik'}
           subtitle={
             subtitle || 'Zuverlässige Elektrotechnik – modern, sicher und individuell umgesetzt.'
           }

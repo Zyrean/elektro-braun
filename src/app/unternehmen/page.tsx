@@ -42,8 +42,8 @@ function ServicePage() {
 
       <StatsSimpleGrid
         belowHero={false}
-        title="Erfahrung, auf die man sich verlassen kann"
-        subtitle="Als regionaler Fachbetrieb begleiten wir seit vielen Jahren Projekte im Bereich Elektrotechnik – zuverlässig, persönlich und mit hohem Qualitätsanspruch."
+        title="Erfahrung, die überzeugt"
+        subtitle="Zuverlässige Elektrotechnik – persönlich geplant und professionell umgesetzt."
       />
 
       <TeamGridMax />

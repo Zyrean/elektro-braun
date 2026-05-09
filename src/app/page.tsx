@@ -14,17 +14,18 @@ import ReferencesColumnBackgroundImage from '@/components/sections/references/Re
 import CtaImage from '@/components/sections/cta/CtaImage'
 
 export const metadata: Metadata = {
-  title: `Physiotherapie in ${COMPANY.address.city} | ${COMPANY.name}`,
+  title: `Elektrotechnik & Photovoltaik in ${COMPANY.address.city} | ${COMPANY.name}`,
 
-  description: `Physiotherapie in ${COMPANY.address.city}. Individuelle Behandlungen für mehr Beweglichkeit, weniger Schmerzen und nachhaltige Gesundheit bei ${COMPANY.name}.`,
+  description: `Ihr Fachbetrieb für Elektrotechnik, Photovoltaik und moderne Gebäudetechnik in ${COMPANY.address.city}. Zuverlässige Lösungen für Privat- und Gewerbekunden.`,
 
   alternates: {
     canonical: `${SITE_URL}/`,
   },
 
   openGraph: {
-    title: `Physiotherapie in ${COMPANY.address.city} | ${COMPANY.name}`,
-    description: `Moderne Physiotherapie für mehr Beweglichkeit und Lebensqualität.`,
+    title: `Elektrotechnik & Photovoltaik in ${COMPANY.address.city} | ${COMPANY.name}`,
+    description:
+      'Moderne Elektrotechnik, Photovoltaik und zuverlässiger Service für Privat- und Gewerbekunden.',
     url: COMPANY.website,
     siteName: COMPANY.name,
     locale: 'de_DE',
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
         url: '/home-hero.png',
         width: 1200,
         height: 630,
-        alt: `Physiotherapie ${COMPANY.name}`,
+        alt: `${COMPANY.name} Elektrotechnik`,
       },
     ],
   },
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `${COMPANY.name}`,
-    description: `Physiotherapie in ${COMPANY.address.city}.`,
+    description: `Elektrotechnik & Photovoltaik in ${COMPANY.address.city}.`,
     images: ['/home-hero.png'],
   },
 
@@ -83,15 +84,16 @@ export default function Home() {
 
       <StatsSimpleGrid
         belowHero={true}
-        title="Erfahrung, auf die man sich verlassen kann"
-        subtitle="Als regionaler Fachbetrieb begleiten wir seit vielen Jahren Projekte im Bereich Elektrotechnik – zuverlässig, persönlich und mit hohem Qualitätsanspruch."
+        title="Erfahrung, die überzeugt"
+        subtitle="Zuverlässige Elektrotechnik – persönlich geplant und professionell umgesetzt."
       />
 
       <ServiceGridImage
         limit={6}
         title="Unsere Leistungen"
-        subtitle="Moderne Elektrotechnik für Privat- und Geschäftskunden – zuverlässig, sicher und individuell auf Ihre Anforderungen abgestimmt."
+        subtitle="Moderne Elektrotechnik für Privat- und Geschäftskunden – zuverlässig und individuell umgesetzt."
       />
+
       <FeatureIconGrid limit={3} />
 
       <ReferencesColumnBackgroundImage
