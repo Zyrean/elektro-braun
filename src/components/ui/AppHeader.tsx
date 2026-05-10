@@ -37,7 +37,7 @@ function AppHeader() {
         <nav className="grid h-22 grid-cols-2 items-center md:grid-cols-3">
           {/* LEFT */}
           <div className="justify-self-start">
-            <Logo isHomepage={isHomepage} />
+            <Logo />
           </div>
 
           {/* CENTER */}
