@@ -105,13 +105,14 @@ export default function Home() {
 
       <PartnerSimple />
       <TestimonialsGridHighlight />
+
       <CtaImage
         title="Moderne Elektrotechnik aus der Region"
         text="Wir begleiten private und gewerbliche Projekte mit zuverlässiger Planung, sauberer Ausführung und persönlicher Beratung."
         primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
         secondaryLabel="Leistungen ansehen"
-        secondaryHref="/leistungen"
+        secondaryHref="/leistungen#services"
       />
     </>
   )

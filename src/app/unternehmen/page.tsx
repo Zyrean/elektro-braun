@@ -25,7 +25,7 @@ function ServicePage() {
           </Text>
 
           <Button href="/kontakt#contact-form" className="mt-8">
-            Kontakt aufnehmen
+            Projekt unverbindlich anfragen
           </Button>
         </div>
       </HeroTwoCards>
@@ -69,7 +69,7 @@ function ServicePage() {
         primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
         secondaryLabel="Leistungen ansehen"
-        secondaryHref="/leistungen"
+        secondaryHref="/leistungen#services"
       />
     </>
   )

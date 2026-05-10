@@ -44,7 +44,7 @@ function ReferencePage() {
         primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
         secondaryLabel="Leistungen ansehen"
-        secondaryHref="/leistungen"
+        secondaryHref="/leistungen#services"
       />
     </>
   )

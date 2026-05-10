@@ -13,7 +13,7 @@ interface ButtonProps {
   size?: ButtonSize
   variant?: ButtonVariant
   disabled?: boolean
-  onClick?: () => void
+  onClick?: (e: React.MouseEvent) => void
 
   leftIcon?: React.ReactNode
   rightIcon?: React.ReactNode

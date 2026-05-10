@@ -7,7 +7,7 @@ import { servicesSteps } from '@/data/servicesSteps'
 
 function ServiceProcessIcons() {
   return (
-    <AppSection id="services" className="scroll-mt-30 lg:scroll-mt-40">
+    <AppSection className="scroll-mt-30 lg:scroll-mt-40">
       <AppContainer>
         <SectionHeader title="So läuft Ihre Behandlung ab" />
 

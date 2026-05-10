@@ -29,7 +29,7 @@ function ServiceGridImage({
   const checkBelowHero = belowHero ? 'lg' : 'none'
 
   return (
-    <AppSection top={checkBelowHero}>
+    <AppSection top={checkBelowHero} id="services">
       <AppContainer>
         <SectionHeader title={title} subtitle={subtitle} />
 

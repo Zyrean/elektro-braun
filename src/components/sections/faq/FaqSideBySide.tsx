@@ -14,7 +14,7 @@ function FaqSideBySide({ faqs, title, subtitle }: FaqSideBySideProps) {
   return (
     <AppSection>
       <AppContainer>
-        <SectionHeader className="mb-16" title={title} subtitle={subtitle} />
+        <SectionHeader className="mb-14" title={title} subtitle={subtitle} />
         <dl className="divide-muted/20 divide-y">
           {faqs.map((faq) => (
             <div

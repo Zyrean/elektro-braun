@@ -23,9 +23,11 @@ export default function StatsSimpleGrid({
           <SectionHeader title={title} subtitle={subtitle} />
           <dl className="grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
-              <div key={stat.id} className="bg-muted/20 flex flex-col p-8">
-                <dt className="text-muted text-sm/6 font-semibold">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight">{stat.value}</dd>
+              <div key={stat.id} className="bg-accent flex flex-col p-8">
+                <dt className="text-sm/6 font-semibold text-white">{stat.name}</dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-white">
+                  {stat.value}
+                </dd>
               </div>
             ))}
           </dl>

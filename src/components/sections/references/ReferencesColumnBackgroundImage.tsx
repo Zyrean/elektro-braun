@@ -58,7 +58,7 @@ export default function ReferencesColumnBackgroundImage({
   }, [api])
 
   return (
-    <AppSection top={checkBelowHero}>
+    <AppSection top={checkBelowHero} id="referenzen">
       <AppContainer>
         <SectionHeader title={title} subtitle={subtitle} />
 
@@ -110,13 +110,13 @@ export default function ReferencesColumnBackgroundImage({
               </CarouselContent>
             </Carousel>
 
-            <div className="mt-6 flex justify-center gap-2">
+            <div className="mt-6 flex h-3 items-center justify-center gap-2">
               {mobileReferences.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => api?.scrollTo(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    current === index ? 'bg-primary w-5' : 'bg-primary/30 w-2'
+                  className={`rounded-full transition-all duration-300 ${
+                    current === index ? 'bg-primary h-3 w-3' : 'bg-muted h-2.5 w-2.5 opacity-40'
                   }`}
                 />
               ))}
@@ -223,7 +223,7 @@ export default function ReferencesColumnBackgroundImage({
         {showButton && (
           <Button
             rightIcon={<ArrowRight />}
-            href="/referenzen"
+            href="/referenzen#referenzen"
             className="mx-auto mt-8 flex w-full sm:w-fit lg:mt-16"
           >
             Alle Referenzen im Überblick

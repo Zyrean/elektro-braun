@@ -23,7 +23,7 @@ export interface Reference {
 export const references: Reference[] = [
   {
     id: 1,
-    name: 'Neubau Einfamilienhaus Schneider',
+    name: 'Neubau Einfamilienhaus',
     slug: 'einfamilienhaus-schneider',
     location: 'Freiburg im Breisgau',
     period: '2022',
@@ -69,7 +69,7 @@ export const references: Reference[] = [
 
   {
     id: 3,
-    name: 'Photovoltaikanlage Familie Berger',
+    name: 'Photovoltaikanlage',
     slug: 'pv-anlage-berger',
     location: 'Emmendingen',
     period: '2023',
@@ -92,7 +92,7 @@ export const references: Reference[] = [
 
   {
     id: 4,
-    name: 'Sanierung Mehrfamilienhaus Weber',
+    name: 'Sanierung Mehrfamilienhaus',
     slug: 'sanierung-weber',
     location: 'Lahr',
     period: '2020 – 2021',
@@ -171,7 +171,7 @@ export const references: Reference[] = [
 
   {
     id: 8,
-    name: 'Neubau Reihenhausanlage Müller',
+    name: 'Neubau Reihenhausanlage',
     slug: 'reihenhausanlage-mueller',
     location: 'Kehl',
     period: '2022 – 2023',

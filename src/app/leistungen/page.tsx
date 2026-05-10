@@ -84,7 +84,7 @@ function ServicePage() {
         primaryLabel="Projekt anfragen"
         primaryHref="/kontakt#contact-form"
         secondaryLabel="Referenzen ansehen"
-        secondaryHref="/referenzen"
+        secondaryHref="/referenzen#referenzen"
       />
     </>
   )

@@ -95,7 +95,7 @@ function FooterGrid() {
             </div>
           </div>
         </div>
-        <div className="border-border mt-16 border-t pt-8 text-center sm:text-left">
+        <div className="border-border/25 mt-16 border-t pt-8 text-center sm:text-left">
           <Text size="sm" className="font-medium text-white">
             &copy; {YEAR} {COMPANY.name}. Alle Rechte vorbehalten.
           </Text>

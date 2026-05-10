@@ -246,7 +246,7 @@ body {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: hsl(var(--primary));
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .testimonial-prev,
