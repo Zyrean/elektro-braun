@@ -31,16 +31,19 @@ export const references: Reference[] = [
     type: 'Privat',
     shortDescription: 'Komplette Elektroinstallation im Neubau',
     description:
-      'Im Rahmen eines Neubaus wurde die komplette Elektroinstallation umgesetzt. Dazu gehörten Planung, Verkabelung sowie moderne Steuerungssysteme für Licht und Energie.',
+      'Im Rahmen eines Neubaus wurde die komplette Elektroinstallation für ein modernes Einfamilienhaus umgesetzt. Das Projekt umfasste die Planung und Installation sämtlicher elektrischer Komponenten – von der klassischen Stromversorgung bis hin zu modernen Steuerungs- und Beleuchtungssystemen. Besonderer Fokus lag auf einer sauberen Verkabelung, energieeffizienter Technik und der Vorbereitung zukünftiger Smart-Home-Erweiterungen. Zusätzlich wurden moderne Lichtkonzepte und intelligente Steuerungsmöglichkeiten integriert, um Komfort und Energieeffizienz optimal miteinander zu verbinden. Durch die strukturierte Planung und fachgerechte Umsetzung entstand eine sichere, moderne und zukunftssichere Elektroinstallation für den gesamten Wohnbereich.',
     services: ['Elektroinstallation', 'Verkabelung', 'Smart Home Integration', 'Beleuchtung'],
     image: {
       src: '/references/einfamilienhaus-schneider.png',
       alt: 'Elektroinstallation in einem Neubau Einfamilienhaus',
     },
     images: [
-      { src: '/references/ref-01.jpg', alt: 'Übersicht Elektroinstallation Neubau' },
-      { src: '/references/ref-01-2.jpg', alt: 'Verkabelung im Haus' },
-      { src: '/references/ref-01-3.jpg', alt: 'Verteilerkasten Installation' },
+      {
+        src: '/references/einfamilienhaus-schneider.png',
+        alt: 'Übersicht Elektroinstallation Neubau',
+      },
+      { src: '/references/einfamilienhaus-schneider.png', alt: 'Verkabelung im Haus' },
+      { src: '/references/einfamilienhaus-schneider.png', alt: 'Verteilerkasten Installation' },
     ],
     highlight: true,
   },
@@ -55,7 +58,7 @@ export const references: Reference[] = [
     type: 'Gewerbe',
     shortDescription: 'Modernisierung der kompletten Gebäudetechnik',
     description:
-      'Ein bestehendes Bürogebäude wurde vollständig modernisiert. Fokus lag auf energieeffizienter Beleuchtung und stabiler Netzwerktechnik.',
+      'Ein bestehendes Bürogebäude wurde im Rahmen einer umfassenden Modernisierung technisch und energetisch auf den neuesten Stand gebracht. Schwerpunkt des Projekts war die Erneuerung der Beleuchtungstechnik sowie der Aufbau einer leistungsfähigen und stabilen Netzwerkinfrastruktur für moderne Arbeitsplätze. Dabei wurden energieeffiziente LED-Systeme installiert und die komplette Netzwerkverkabelung neu strukturiert. Zusätzlich erfolgte die Modernisierung der elektrischen Versorgung und Sicherheitsbeleuchtung innerhalb des Gebäudes. Durch die Umsetzung entstand eine moderne und zukunftssichere Arbeitsumgebung mit optimierter Energieeffizienz und zuverlässiger Kommunikationstechnik.',
     services: ['Netzwerktechnik', 'Beleuchtung', 'Sicherheitsbeleuchtung', 'Elektroinstallation'],
     image: {
       src: '/references/buero-techsolutions.png',
@@ -77,7 +80,7 @@ export const references: Reference[] = [
     type: 'Privat',
     shortDescription: 'Installation einer PV-Anlage mit Speicher',
     description:
-      'Planung und Umsetzung einer Photovoltaikanlage inklusive Stromspeicher zur nachhaltigen Energieversorgung des Haushalts.',
+      'Für ein privates Wohngebäude wurde eine moderne Photovoltaikanlage inklusive Stromspeicher geplant und installiert. Ziel des Projekts war eine nachhaltige und effiziente Eigenversorgung mit selbst erzeugtem Solarstrom. Die Anlage wurde individuell auf die Dachfläche sowie den Energiebedarf des Haushalts abgestimmt und ermöglicht eine optimale Nutzung der erzeugten Energie. Zusätzlich wurde ein Stromspeicher integriert, um den Eigenverbrauch zu erhöhen und die Unabhängigkeit vom öffentlichen Stromnetz weiter zu verbessern. Durch die moderne Technik und fachgerechte Umsetzung entstand eine leistungsstarke und zukunftssichere Energielösung für den gesamten Haushalt.',
     services: ['Photovoltaik', 'Energiespeicher', 'Netzanbindung'],
     image: {
       src: '/references/pv-anlage-berger.png',
@@ -100,7 +103,7 @@ export const references: Reference[] = [
     type: 'Gewerbe',
     shortDescription: 'Erneuerung der kompletten Elektroinstallation',
     description:
-      'Im Zuge einer Altbausanierung wurde die gesamte Elektroinstallation erneuert und auf den neuesten Stand gebracht.',
+      'Im Zuge einer umfassenden Altbausanierung wurde die komplette Elektroinstallation eines Mehrfamilienhauses modernisiert und an aktuelle Sicherheits- und Technikstandards angepasst. Dabei wurden veraltete Leitungen, Sicherungssysteme und elektrische Komponenten erneuert sowie moderne Verteilertechnik integriert. Besonderes Augenmerk lag auf einer sicheren und zukunftssicheren Stromversorgung für sämtliche Wohneinheiten. Zusätzlich wurden neue Anschlüsse und Erweiterungsmöglichkeiten für moderne Haushalts- und Kommunikationstechnik geschaffen. Durch die strukturierte Planung und fachgerechte Umsetzung entstand eine zuverlässige und langfristig sichere Elektroinstallation für das gesamte Gebäude.',
     services: ['Altbausanierung', 'Elektroinstallation', 'Verteilertechnik'],
     image: {
       src: '/references/sanierung-weber.png',
@@ -119,7 +122,7 @@ export const references: Reference[] = [
     type: 'Gewerbe',
     shortDescription: 'Umrüstung der Hallenbeleuchtung auf LED',
     description:
-      'Die bestehende Beleuchtung wurde vollständig durch moderne LED-Technik ersetzt, um Energieverbrauch und Wartungskosten zu reduzieren.',
+      'In einer Industriehalle wurde die bestehende Beleuchtungsanlage vollständig auf moderne und energieeffiziente LED-Technik umgerüstet. Ziel des Projekts war die deutliche Reduzierung des Energieverbrauchs sowie eine Verbesserung der Lichtqualität in den Arbeitsbereichen. Dabei wurden leistungsstarke LED-Systeme installiert, die eine gleichmäßige Ausleuchtung der gesamten Halle ermöglichen und gleichzeitig die Wartungs- und Betriebskosten reduzieren. Zusätzlich wurde die Beleuchtung an die Anforderungen des laufenden Betriebs angepasst, um eine optimale Arbeitsumgebung für Mitarbeiter und Logistikprozesse zu schaffen. Durch die Modernisierung entstand eine langlebige und wirtschaftliche Beleuchtungslösung für den industriellen Einsatz.',
     services: ['Beleuchtungstechnik', 'LED-Umrüstung', 'Industrieinstallation'],
     image: {
       src: '/references/industriehalle-kuehn.png',
@@ -138,7 +141,7 @@ export const references: Reference[] = [
     type: 'Gewerbe',
     shortDescription: 'Installation mehrerer E-Ladestationen',
     description:
-      'Installation und Inbetriebnahme von mehreren Ladepunkten für Elektrofahrzeuge inklusive Lastmanagement.',
+      'Für eine moderne Wohnanlage wurde eine Ladeinfrastruktur mit mehreren E-Ladestationen für Elektrofahrzeuge geplant und umgesetzt. Das Projekt umfasste die Installation mehrerer Wallboxen inklusive intelligentem Lastmanagement zur effizienten Verteilung der verfügbaren Energie. Besonderes Augenmerk lag auf einer sicheren Integration in die bestehende Elektroinstallation sowie auf zukünftigen Erweiterungsmöglichkeiten der Ladeinfrastruktur. Durch die moderne Steuerungstechnik können die Ladepunkte effizient und zuverlässig betrieben werden. So entstand eine zukunftssichere Lösung für komfortables und nachhaltiges Laden innerhalb der gesamten Wohnanlage.',
     services: ['E-Mobilität', 'Ladestationen', 'Lastmanagement'],
     image: {
       src: '/references/ladestation-wohnanlage.png',
@@ -157,7 +160,7 @@ export const references: Reference[] = [
     type: 'Gewerbe',
     shortDescription: 'Modernisierung der Elektroinstallation in Praxisräumen',
     description:
-      'Im Zuge eines Praxisumbaus wurde die komplette Elektroinstallation modernisiert. Besonderer Fokus lag auf Beleuchtung und zuverlässiger Versorgung der medizinischen Geräte.',
+      'Im Rahmen des Umbaus einer Zahnarztpraxis wurde die bestehende Elektroinstallation vollständig modernisiert und an die technischen Anforderungen moderner Praxisräume angepasst. Besonderer Fokus lag auf einer zuverlässigen Stromversorgung für medizinische Geräte sowie einer funktionalen und angenehmen Beleuchtung in Behandlungs- und Wartebereichen. Zusätzlich wurden energieeffiziente Lichtsysteme und moderne elektrische Komponenten integriert, um Sicherheit, Komfort und Arbeitsabläufe innerhalb der Praxis zu optimieren. Die gesamte Installation wurde sorgfältig geplant und während des laufenden Umbaus fachgerecht umgesetzt. So entstand eine moderne und zukunftssichere Elektroinfrastruktur für den täglichen Praxisbetrieb.',
     services: ['Elektroinstallation', 'Beleuchtung', 'Sicherheitsbeleuchtung'],
     image: {
       src: '/references/zahnarztpraxis-klein.png',
@@ -179,7 +182,7 @@ export const references: Reference[] = [
     type: 'Privat',
     shortDescription: 'Elektroinstallation in mehreren Wohneinheiten',
     description:
-      'Für eine Reihenhausanlage wurde die komplette Elektroinstallation umgesetzt. Dazu gehörten moderne Verteilertechnik sowie vorbereitete Smart-Home Lösungen.',
+      'Für den Neubau einer modernen Reihenhausanlage wurde die komplette Elektroinstallation für mehrere Wohneinheiten geplant und umgesetzt. Das Projekt umfasste die Installation sämtlicher Strom-, Netzwerk- und Verteilertechnik sowie die Vorbereitung zukünftiger Smart-Home-Funktionen. Besonderes Augenmerk lag auf einer strukturierten und zukunftssicheren Installation, die den Anforderungen moderner Wohnkonzepte gerecht wird. Zusätzlich wurden energieeffiziente Beleuchtungslösungen und flexible Erweiterungsmöglichkeiten integriert. Durch die fachgerechte Umsetzung entstand eine moderne und zuverlässige Elektroinfrastruktur für alle Wohneinheiten der Anlage.',
     services: ['Elektroinstallation', 'Verteilertechnik', 'Smart Home Vorbereitung'],
     image: {
       src: '/references/reihenhausanlage-mueller.png',
@@ -198,7 +201,7 @@ export const references: Reference[] = [
     type: 'Gewerbe',
     shortDescription: 'Erneuerung der Beleuchtung und Sicherheitsanlagen',
     description:
-      'Die bestehende Beleuchtung wurde durch energieeffiziente LED-Technik ersetzt. Zusätzlich wurden Sicherheitsbeleuchtung und Steuerungssysteme modernisiert.',
+      'Im Rahmen der Sanierung einer Sporthalle wurde die bestehende Beleuchtungs- und Sicherheitsanlage vollständig modernisiert. Ziel des Projekts war eine energieeffiziente und leistungsstarke Beleuchtungslösung für Trainings-, Wettkampf- und Veranstaltungsbereiche. Dabei wurde die vorhandene Beleuchtung durch moderne LED-Technik ersetzt und die Sicherheitsbeleuchtung auf aktuelle Standards angepasst. Zusätzlich erfolgte die Modernisierung der Steuerungs- und Versorgungstechnik für einen zuverlässigen und sicheren Betrieb der gesamten Anlage. Durch die Umsetzung entstand eine langlebige und wirtschaftliche Beleuchtungslösung mit optimierter Lichtqualität für die gesamte Sporthalle.',
     services: ['Beleuchtungstechnik', 'LED-Umrüstung', 'Sicherheitsbeleuchtung'],
     image: {
       src: '/references/sporthalle-nord.png',

@@ -22,13 +22,13 @@ export default function BlogColumnImage() {
           {posts.map((post) => (
             <Link
               key={post.id}
-              href={`/aktuelles/${post.href}`}
+              href={`/aktuelles/${post.slug}`}
               className="group flex h-full flex-col items-start justify-between group-hover:cursor-pointer"
             >
               <div className="relative aspect-4/3 w-full">
                 <Image
                   alt={post.title}
-                  src={post.imageUrl}
+                  src={post.image.src}
                   fill
                   className="rounded-2xl object-cover transition duration-500 group-hover:scale-102"
                   sizes="(max-width: 768px) 100vw, 33vw"

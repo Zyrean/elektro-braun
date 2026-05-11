@@ -2,6 +2,7 @@ import CtaRowBorder from '@/components/sections/cta/CtaRowBorder'
 import { AppContainer } from '@/components/ui/AppContainer'
 import { AppSection } from '@/components/ui/AppSection'
 import { Heading } from '@/components/ui/Heading'
+import { ListComponent } from '@/components/ui/List'
 import { Text } from '@/components/ui/Text'
 import { COMPANY } from '@/data/company'
 import { SITE_URL } from '@/data/helper'
@@ -69,27 +70,6 @@ export async function generateMetadata({
   }
 }
 
-// interface ListComponentProps {
-//   title: string
-//   items?: string[]
-// }
-
-// function ListComponent({ items, title }: ListComponentProps) {
-//   return (
-//     <div>
-//       <Heading as="h3" className="mb-3">
-//         {title}
-//       </Heading>
-
-//       <ul className="list-disc space-y-2 pl-5">
-//         {items?.map((item, index) => (
-//           <li key={index}>{item}</li>
-//         ))}
-//       </ul>
-//     </div>
-//   )
-// }
-
 export default async function ServiceDetailsPage({
   params,
 }: {
@@ -112,14 +92,14 @@ export default async function ServiceDetailsPage({
               <Heading as="h1" size="sm">
                 {service.title}
               </Heading>
-              <Text size="lg" color="muted" className="mt-6 max-w-3xl">
+              {/* <Text size="lg" color="muted" className="mt-2 max-w-3xl">
                 {service.teaser}
-              </Text>
+              </Text> */}
 
               <div className="relative mt-8 h-64 w-full overflow-hidden rounded-2xl sm:h-80">
                 <Image
                   src={service.image || ''}
-                  alt={`Image of ${service.title}`}
+                  alt={`${service.title} von ${COMPANY.name}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
                   priority
@@ -130,22 +110,29 @@ export default async function ServiceDetailsPage({
 
             <div className="flex flex-col gap-4">
               <Heading as="h2" size="sm">
-                Was erwartet Sie bei dieser Behandlung?
+                {service.title} im Detail
               </Heading>
-              <Text className="leading-relaxed">{service.description}</Text>
+              <Text className="leading-7">{service.description}</Text>
 
               {/* <div className="mt-8 flex flex-col gap-10">
                 <ListComponent title="Schmerzsymptome" items={service.indications} />
                 <ListComponent title="Behandlungsablauf" items={service.process} />
                 <ListComponent title="Vorteile" items={service.benefits} />
               </div> */}
+
+              {service.sections &&
+                service.sections?.map((service, index) => (
+                  <div key={index} className="mt-8 flex flex-col gap-10">
+                    <ListComponent title={service.title} items={service.items} />
+                  </div>
+                ))}
             </div>
           </div>
 
           <CtaRowBorder
-            title="Starten Sie jetzt Ihre Behandlung"
-            text="Ob akute Beschwerden oder präventive Therapie – wir begleiten Sie individuell und professionell auf Ihrem Weg zu mehr Gesundheit und Wohlbefinden."
-            primaryLabel="Termin vereinbaren"
+            title="Die Lösung für Ihr Projekt"
+            text="Von Elektroinstallationen bis Photovoltaik – wir unterstützen Sie mit moderner Technik und langjähriger Erfahrung."
+            primaryLabel="Projekt anfragen"
             primaryHref="/kontakt#contact-form"
           />
         </AppContainer>

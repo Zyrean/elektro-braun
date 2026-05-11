@@ -1,6 +1,8 @@
 import CtaRowBorder from '@/components/sections/cta/CtaRowBorder'
+import Gallery from '@/components/sections/unternehmen/Gallery'
 import { AppContainer } from '@/components/ui/AppContainer'
 import { AppSection } from '@/components/ui/AppSection'
+import { Badge } from '@/components/ui/Badge'
 import { Heading } from '@/components/ui/Heading'
 import { Text } from '@/components/ui/Text'
 import { COMPANY } from '@/data/company'
@@ -82,45 +84,69 @@ export default async function PostDetailsPage({ params }: { params: Promise<{ sl
     <>
       <AppSection top="sm" bottom="none">
         <AppContainer size="5xl">
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-12">
             <div>
-              <Heading as="h1" size="sm">
-                {post.title}
+              <Heading as="h1" size="sm" className="max-w-3xl text-balance">
+                {post.heroTitle}
               </Heading>
-              <Text size="lg" color="muted" className="mt-6 max-w-3xl">
-                {post.title}
-              </Text>
 
-              <div className="relative mt-8 h-64 w-full overflow-hidden rounded-2xl sm:h-80">
+              <div className="mt-3 mb-6 flex max-w-4xl flex-col gap-4">
+                <div className="flex items-center gap-x-2 text-xs">
+                  <Badge className={post.color}>{post.category.title}</Badge>
+                  <span>|</span>
+                  <Text size="sm">{post.location}</Text>
+                  <span>-</span>
+                  <time dateTime={post.datetime} className="text-muted">
+                    {post.date}
+                  </time>
+                </div>
+              </div>
+
+              <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-96">
                 <Image
-                  src={post.imageUrl || ''}
-                  alt={`Image of ${post.title}`}
+                  src={post.image.src}
+                  alt={post.image.alt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 800px"
+                  sizes="(max-width: 768px) 100vw, 1200px"
                   priority
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <Heading as="h2" size="sm">
-                Was erwartet Sie bei dieser Behandlung?
-              </Heading>
-              <Text className="leading-relaxed">{post.description}</Text>
+            {/* <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <InfoCard icon={MapPin} label="Standort" value={reference.location} />
 
-              {/* <div className="mt-8 flex flex-col gap-10">
-                <ListComponent title="Schmerzsymptome" items={service.indications} />
-                <ListComponent title="Behandlungsablauf" items={service.process} />
-                <ListComponent title="Vorteile" items={service.benefits} />
-              </div> */}
-            </div>
+              <InfoCard icon={CalendarDays} label="Zeitraum" value={reference.period} />
+
+              <InfoCard icon={Wallet} label="Projektvolumen" value={reference.cost} />
+
+              <InfoCard icon={BriefcaseBusiness} label="Projektart" value={reference.type || ''} />
+            </div> */}
+
+            <Text className="leading-7">{post.description}</Text>
+
+            {/* <div className="flex flex-col gap-4">
+              <Heading as="h2" size="sm">
+                Leistungen im Projekt
+              </Heading>
+
+              <div className="flex flex-wrap gap-3">
+                {reference.services.map((service, index) => (
+                  <div key={index} className="rounded-full border px-4 py-2 text-sm">
+                    {service}
+                  </div>
+                ))}
+              </div>
+            </div> */}
+
+            <Gallery images={post.images} />
           </div>
 
           <CtaRowBorder
-            title="Starten Sie jetzt Ihre Behandlung"
-            text="Ob akute Beschwerden oder präventive Therapie – wir begleiten Sie individuell und professionell auf Ihrem Weg zu mehr Gesundheit und Wohlbefinden."
-            primaryLabel="Termin vereinbaren"
+            title="Die Lösung für Ihr Projekt"
+            text="Von Elektroinstallationen bis Photovoltaik – wir unterstützen Sie mit moderner Technik und langjähriger Erfahrung."
+            primaryLabel="Projekt anfragen"
             primaryHref="/kontakt#contact-form"
           />
         </AppContainer>

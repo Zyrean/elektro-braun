@@ -20,9 +20,12 @@ import 'yet-another-react-lightbox/styles.css'
 import Zoom from 'yet-another-react-lightbox/plugins/zoom'
 
 interface GalleryProps {
-  title: string
+  title?: string
   subtitle?: string
-  images: string[]
+  images: {
+    src: string
+    alt: string
+  }[]
 }
 
 const buttonStyle = `bg-white/90 backdrop-blur text-primary border border-primary/30 hover:bg-primary hover:text-white transition-all duration-200 disabled:opacity-30 disabled:bg-white/90 disabled:text-primary shadow-sm hover:shadow-md disabled:shadow-none hover:cursor-pointer disabled:pointer-events-none hidden xl:flex`
@@ -30,7 +33,11 @@ const buttonStyle = `bg-white/90 backdrop-blur text-primary border border-primar
 function Gallery({ title, subtitle, images }: GalleryProps) {
   const [api, setApi] = useState<EmblaCarouselType | null>(null)
 
-  const slides = images.map((src) => ({ src }))
+  const spacing = title ? undefined : 'none'
+
+  const slides = images.map((image) => ({
+    src: image.src,
+  }))
 
   const [current, setCurrent] = useState(0)
   const [open, setOpen] = useState(false)
@@ -55,9 +62,9 @@ function Gallery({ title, subtitle, images }: GalleryProps) {
 
   return (
     <>
-      <AppSection>
-        <AppContainer>
-          <SectionHeader title={title} subtitle={subtitle} />
+      <AppSection top={spacing} bottom={spacing}>
+        <AppContainer className="lg:px-0">
+          {title && <SectionHeader title={title} subtitle={subtitle} />}
 
           <Carousel className="w-full" setApi={(embla) => setApi(embla ?? null)}>
             <CarouselContent>
@@ -71,7 +78,7 @@ function Gallery({ title, subtitle, images }: GalleryProps) {
                     }}
                   >
                     <Image
-                      src={image}
+                      src={image.src}
                       alt={`Praxis Impression ${index + 1}`}
                       fill
                       sizes="(max-width: 768px) 100vw, 800px"
@@ -82,11 +89,19 @@ function Gallery({ title, subtitle, images }: GalleryProps) {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className={buttonStyle} />
-            <CarouselNext className={buttonStyle} />
+            {images.length > 3 && (
+              <>
+                <CarouselPrevious className={buttonStyle} />
+                <CarouselNext className={buttonStyle} />
+              </>
+            )}
+
+            {/* <CarouselPrevious className={buttonStyle} />
+            <CarouselNext className={buttonStyle} /> */}
           </Carousel>
 
           {/* Mobile Dots */}
+
           <div className="mt-6 flex justify-center gap-2 xl:hidden">
             {images.map((_, index) => (
               <button

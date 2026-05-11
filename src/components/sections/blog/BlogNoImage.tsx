@@ -40,7 +40,7 @@ export default function BlogNoImage() {
               </div>
 
               <ReadMoreLink
-                href={`/aktuelles/${post.href}`}
+                href={`/aktuelles/${post.slug}`}
                 className="mt-10 inline-flex"
                 icon={ArrowRight}
               >

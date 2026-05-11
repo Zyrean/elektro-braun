@@ -23,8 +23,8 @@ export default function BlogRowImage() {
             <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
               <div className="relative aspect-video sm:aspect-2/1 lg:aspect-square lg:w-64 lg:shrink-0">
                 <Image
-                  alt=""
-                  src={post.imageUrl}
+                  src={post.image.src}
+                  alt={post.image.alt}
                   className="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover"
                   width={100}
                   height={100}
@@ -51,7 +51,7 @@ export default function BlogRowImage() {
 
                 {/* <div className="mt-6 flex border-t border-gray-900/5"> */}
                 <ReadMoreLink
-                  href={`/aktuelles/${post.href}`}
+                  href={`/aktuelles/${post.slug}`}
                   className="mt-10 inline-flex"
                   icon={ArrowRight}
                 >

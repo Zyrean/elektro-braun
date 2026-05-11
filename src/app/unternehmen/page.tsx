@@ -38,8 +38,6 @@ function ServicePage() {
         clickable={false}
       />
 
-      {/* <FeatureIconGrid /> */}
-
       <StatsSimpleGrid
         belowHero={false}
         title="Erfahrung, die überzeugt"
@@ -52,14 +50,38 @@ function ServicePage() {
         title="Einblicke in unseren Arbeitsalltag"
         subtitle="Ein Blick hinter die Kulissen von Elektro Braun."
         images={[
-          '/unternehmen/gallery-01.png',
-          '/unternehmen/gallery-02.png',
-          '/unternehmen/gallery-03.png',
-          '/unternehmen/gallery-04.png',
-          '/unternehmen/gallery-05.png',
-          '/unternehmen/gallery-06.png',
-          '/unternehmen/gallery-07.png',
-          '/unternehmen/gallery-08.png',
+          {
+            src: '/unternehmen/gallery-01.png',
+            alt: 'Elektroinstallation im Neubau',
+          },
+          {
+            src: '/unternehmen/gallery-02.png',
+            alt: 'Arbeiten am Verteilerkasten',
+          },
+          {
+            src: '/unternehmen/gallery-03.png',
+            alt: 'Montage moderner Beleuchtung',
+          },
+          {
+            src: '/unternehmen/gallery-04.png',
+            alt: 'Installation von Netzwerktechnik',
+          },
+          {
+            src: '/unternehmen/gallery-05.png',
+            alt: 'Elektroarbeiten auf der Baustelle',
+          },
+          {
+            src: '/unternehmen/gallery-06.png',
+            alt: 'Smart-Home Installation',
+          },
+          {
+            src: '/unternehmen/gallery-07.png',
+            alt: 'Photovoltaik Installation',
+          },
+          {
+            src: '/unternehmen/gallery-08.png',
+            alt: 'Moderne Elektroinstallation im Innenbereich',
+          },
         ]}
       />
 
