@@ -14,7 +14,7 @@ function ServiceProcessSteps() {
           subtitle="Von der ersten Beratung bis zur fertigen Umsetzung begleiten wir Ihr Projekt zuverlässig und strukturiert."
         />
 
-        <div className="mx-auto max-w-3xl space-y-10">
+        <div className="mx-auto grid max-w-3xl grid-cols-1 space-y-10 sm:grid-cols-2">
           {servicesSteps.map((step, index) => (
             <div key={step.title} className="relative flex gap-4">
               <div className="text-primary text-xl font-medium">

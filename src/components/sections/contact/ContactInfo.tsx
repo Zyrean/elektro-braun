@@ -25,11 +25,11 @@ function ContactInfo({ title, subtitle, cards, belowHero }: ContactInfoProps) {
       <AppContainer>
         <SectionHeader title={title} subtitle={subtitle} />
 
-        <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => (
             <div
               key={card.title}
-              className="border-border bg-background flex h-full flex-col rounded-2xl border p-7 shadow-sm"
+              className="border-border bg-background flex h-full flex-col rounded-2xl border p-7"
             >
               <Heading as="h3" className="mb-3 sm:text-xl">
                 {card.title}

@@ -16,6 +16,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Komplette Elektroinstallationen im Neubau',
           'Modernisierung bestehender Elektroanlagen',
@@ -30,6 +31,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Persönliche Beratung und Besichtigung vor Ort',
           'Analyse der Anforderungen und Wünsche',
@@ -44,6 +46,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Sichere Elektroinstallationen nach aktuellen Normen',
           'Individuelle Lösungen passend zu Ihrem Gebäude',
@@ -71,6 +74,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Planung individueller Photovoltaikanlagen',
           'Montage von Solarmodulen',
@@ -85,6 +89,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Persönliche Beratung und Analyse Ihres Energiebedarfs',
           'Prüfung der Dachfläche und technischen Voraussetzungen',
@@ -99,6 +104,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Reduzierung der laufenden Stromkosten',
           'Mehr Unabhängigkeit von Energieversorgern',
@@ -126,6 +132,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Automatisierung von Beleuchtungssystemen',
           'Steuerung von Heizung und Klimatisierung',
@@ -140,6 +147,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Persönliche Beratung und Bedarfsanalyse',
           'Planung der individuellen Smart-Home-Lösung',
@@ -154,6 +162,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Mehr Komfort und einfache Steuerung im Alltag',
           'Energieeinsparung durch intelligente Automationen',
@@ -181,6 +190,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'LAN- und WLAN-Installation',
           'Netzwerkverkabelung für Wohn- und Gewerbeobjekte',
@@ -195,6 +205,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Analyse der Anforderungen und Nutzung',
           'Planung der Netzwerkstruktur',
@@ -209,6 +220,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Stabile und schnelle Netzwerkverbindungen',
           'Zuverlässige WLAN-Abdeckung',
@@ -236,6 +248,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Fehlersuche und Reparatur elektrischer Anlagen',
           'Regelmäßige Wartung und Inspektion',
@@ -250,6 +263,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Analyse der Störung oder Anlage',
           'Prüfung aller relevanten Komponenten',
@@ -264,6 +278,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Schnelle Hilfe bei technischen Problemen',
           'Hohe Betriebssicherheit Ihrer Anlagen',
@@ -291,6 +306,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Innen- und Außenbeleuchtung',
           'Planung individueller Lichtkonzepte',
@@ -305,6 +321,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Persönliche Beratung und Analyse der Räume',
           'Planung des individuellen Beleuchtungskonzepts',
@@ -319,6 +336,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Angenehme und funktionale Lichtlösungen',
           'Energieeffiziente und moderne Technik',
@@ -346,6 +364,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Installation von Wallboxen',
           'Ladeinfrastruktur für Unternehmen',
@@ -360,6 +379,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Persönliche Beratung und Bedarfsanalyse',
           'Prüfung der vorhandenen Elektroinstallation',
@@ -374,6 +394,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Komfortables Laden zuhause oder im Unternehmen',
           'Zukunftssichere Ladeinfrastruktur',
@@ -401,6 +422,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Klingel- und Gegensprechanlagen',
           'Video-Türsprechanlagen',
@@ -415,6 +437,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Persönliche Beratung und Bedarfsanalyse',
           'Auswahl passender Türkommunikationssysteme',
@@ -429,6 +452,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Mehr Sicherheit im Eingangsbereich',
           'Komfortable Kommunikation mit Besuchern',
@@ -456,6 +480,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Erneuerung veralteter Elektroinstallationen',
           'Austausch alter Leitungen und Kabel',
@@ -470,6 +495,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Besichtigung und Bestandsaufnahme vor Ort',
           'Analyse der bestehenden Elektroinstallation',
@@ -484,6 +510,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Mehr Sicherheit durch moderne Elektroinstallation',
           'Anpassung an aktuelle Normen und Standards',
@@ -511,6 +538,7 @@ export const services: Service[] = [
     sections: [
       {
         title: 'Leistungen',
+        variant: 'check',
         items: [
           'Prüfung elektrischer Anlagen',
           'Überprüfung elektrischer Geräte',
@@ -525,6 +553,7 @@ export const services: Service[] = [
 
       {
         title: 'Ablauf',
+        variant: 'steps',
         items: [
           'Terminvereinbarung und Vor-Ort-Besichtigung',
           'Prüfung der elektrischen Anlagen und Geräte',
@@ -539,6 +568,7 @@ export const services: Service[] = [
 
       {
         title: 'Ihre Vorteile',
+        variant: 'check',
         items: [
           'Erhöhte Sicherheit für Personen und Gebäude',
           'Früherkennung möglicher Schäden und Risiken',

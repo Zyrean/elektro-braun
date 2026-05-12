@@ -10,7 +10,7 @@ interface HeroTwoCardsProps {
 
 function HeroTwoCards({ children, imageSrc, imageAlt }: HeroTwoCardsProps) {
   return (
-    <section className="sm:py-28">
+    <section className="lg:py-28">
       {/* MOBILE */}
       <div className="lg:hidden">
         <div className="relative overflow-hidden rounded-b-2xl">

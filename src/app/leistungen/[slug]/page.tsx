@@ -123,7 +123,11 @@ export default async function ServiceDetailsPage({
               {service.sections &&
                 service.sections?.map((service, index) => (
                   <div key={index} className="mt-8 flex flex-col gap-10">
-                    <ListComponent title={service.title} items={service.items} />
+                    <ListComponent
+                      title={service.title}
+                      items={service.items}
+                      variant={service.variant}
+                    />
                   </div>
                 ))}
             </div>

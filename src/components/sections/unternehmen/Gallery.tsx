@@ -101,14 +101,13 @@ function Gallery({ title, subtitle, images }: GalleryProps) {
           </Carousel>
 
           {/* Mobile Dots */}
-
           <div className="mt-6 flex justify-center gap-2 xl:hidden">
             {images.map((_, index) => (
               <button
                 key={index}
                 onClick={() => api?.scrollTo(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  current === index ? 'bg-primary w-5' : 'bg-primary/30 w-2'
+                  current === index ? 'bg-primary w-5' : 'bg-muted/25 w-2'
                 }`}
               />
             ))}

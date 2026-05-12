@@ -82,8 +82,8 @@ export default function ContactFormImage() {
             />
           </div>
 
-          <div className="pt-16 sm:pt-24 sm:pb-32 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-0 lg:pb-0">
-            <div className="px-2 lg:px-8">
+          <div className="pt-16 sm:pt-8 sm:pb-0 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-0">
+            <div className="lg:px-8">
               <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                 <SectionHeader
                   title="Termin anfragen"
@@ -171,7 +171,11 @@ export default function ContactFormImage() {
                           innerhalb von 24 Stunden bei Ihnen zurück.
                         </Text>
 
-                        <Button className="mt-6" type="submit" disabled={isSubmitting}>
+                        <Button
+                          className="mt-6 w-full lg:w-fit"
+                          type="submit"
+                          disabled={isSubmitting}
+                        >
                           {isSubmitting ? 'Wird gesendet...' : 'Termin anfragen'}
                         </Button>
                       </div>

@@ -34,14 +34,14 @@ function AppHeader() {
       )}
     >
       <AppContainer>
-        <nav className="grid h-22 grid-cols-2 items-center md:grid-cols-3">
+        <nav className="grid h-22 grid-cols-2 items-center lg:grid-cols-3">
           {/* LEFT */}
           <div className="justify-self-start">
             <Logo />
           </div>
 
           {/* CENTER */}
-          <div className="hidden gap-10 justify-self-center md:flex">
+          <div className="hidden gap-10 justify-self-center lg:flex">
             {headerNavigation.map((nav) => (
               <NavLink key={nav.href} href={nav.href} isHomepage={isHomepage}>
                 {nav.label}
@@ -51,7 +51,7 @@ function AppHeader() {
 
           {/* RIGHT */}
           <div className="flex items-center gap-4 justify-self-end">
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <Button href="/kontakt" className="shadow-sm">
                 Kontakt
               </Button>

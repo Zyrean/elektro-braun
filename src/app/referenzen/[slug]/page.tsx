@@ -155,13 +155,10 @@ export default async function ReferenceDetailsPage({
               </div>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
               <InfoCard icon={MapPin} label="Standort" value={reference.location} />
-
               <InfoCard icon={CalendarDays} label="Zeitraum" value={reference.period} />
-
               <InfoCard icon={Wallet} label="Projektvolumen" value={reference.cost} />
-
               <InfoCard icon={BriefcaseBusiness} label="Projektart" value={reference.type || ''} />
             </div>
 

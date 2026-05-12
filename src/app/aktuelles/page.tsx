@@ -8,10 +8,9 @@ function AktuellesPage() {
   return (
     <>
       <HeroTwoCards imageSrc="/team/team.png" imageAlt="Team Braun Elektrotechnik bei einem Event">
-        {/* WENN MAN CARD VERSETZEN WILL = lg:-translate-y-10 */}
-        <div className="from-primary/15 to-accent/20 relative z-10 max-w-md rounded-2xl bg-linear-to-br via-white p-8 shadow-xl shadow-black/10 backdrop-blur-lg lg:col-span-1 lg:-mr-20">
-          <Heading as="h1" className="leading-tight lg:text-5xl">
-            Aktuelles & Einblicke
+        <div className="from-primary/10 relative z-10 mx-auto max-w-xl rounded-2xl border border-white/20 bg-linear-to-r to-white/60 p-8 shadow-sm shadow-black/10 backdrop-blur-2xl lg:col-span-1 lg:mx-0 lg:-mr-20 lg:shadow-lg">
+          <Heading as="h1" className="lg:text-[40px]">
+            Aktuelles & <br /> Einblicke
           </Heading>
 
           <Text className="mt-6 leading-8">

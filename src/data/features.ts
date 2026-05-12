@@ -59,7 +59,7 @@ export const features: Feature[] = [
   {
     id: 5,
     feature: 'Flexibel',
-    header: 'Termine nach Ihren Bedürfnissen',
+    header: 'Flexible Terminplanung',
     description:
       'Wir richten uns nach Ihrem Zeitplan und finden passende Lösungen für Ihr Projekt.',
     descriptionLong:

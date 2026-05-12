@@ -116,7 +116,7 @@ export default function ReferencesColumnBackgroundImage({
                   key={index}
                   onClick={() => api?.scrollTo(index)}
                   className={`rounded-full transition-all duration-300 ${
-                    current === index ? 'bg-primary h-3 w-3' : 'bg-muted h-2.5 w-2.5 opacity-40'
+                    current === index ? 'bg-primary h-3 w-5' : 'bg-muted/25 h-2 w-2'
                   }`}
                 />
               ))}

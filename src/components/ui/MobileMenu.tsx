@@ -25,7 +25,7 @@ export default function MobileMenu({ navigation, isHomepage }: MobileMenuProps) 
       {/* BUTTON */}
       <button
         onClick={() => setOpen(true)}
-        className="rounded-lg p-2 md:hidden"
+        className="rounded-lg p-2 lg:hidden"
         aria-label="Menü öffnen"
       >
         <Menu className={cn('size-6', isHomepage && 'text-white')} />
@@ -34,7 +34,7 @@ export default function MobileMenu({ navigation, isHomepage }: MobileMenuProps) 
       {/* OVERLAY */}
       <div
         className={cn(
-          'fixed inset-0 z-100 md:hidden',
+          'lg :hidden fixed inset-0 z-100',
           open ? 'opacity-100' : 'pointer-events-none opacity-0',
         )}
       >
@@ -46,7 +46,7 @@ export default function MobileMenu({ navigation, isHomepage }: MobileMenuProps) 
 
         {/* CONTENT */}
         <div className="relative z-10 flex h-fit flex-col">
-          <div className="bg-background flex h-22 items-center justify-between px-4 shadow-sm">
+          <div className="bg-background flex h-22 items-center justify-between px-4 shadow-sm md:px-6">
             <Logo onClick={() => setOpen(false)} />
 
             <button onClick={() => setOpen(false)} className="p-2" aria-label="Menü schlißen">

@@ -7,6 +7,7 @@ export interface Navigation {
 
 export interface ServiceSection {
   title: string
+  variant: 'check' | 'steps'
   items?: string[]
   content?: string
 }
@@ -22,21 +23,6 @@ export interface Service {
   image?: string
   images?: string[]
 }
-
-// export interface Service {
-//   id?: number
-//   title?: string
-//   abbreviation?: string
-//   slug?: string
-//   teaser?: string
-//   description?: string
-//   indications?: string[]
-//   process?: string[]
-//   benefits?: string[]
-//   icon?: LucideIcon
-//   image?: string
-//   images: string[]
-// }
 
 export interface Faq {
   id: number

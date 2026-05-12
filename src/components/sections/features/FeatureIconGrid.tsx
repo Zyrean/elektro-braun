@@ -31,7 +31,7 @@ export function FeatureIconGrid({ limit, title, subtitle }: FeatureIconGridProps
                 <feature.icon className="text-primary h-6 w-6" />
               </div>
 
-              <Heading as="h3" className="mb-2">
+              <Heading as="h3" className="mb-2 text-balance">
                 {feature.header}
               </Heading>
 
