@@ -20,14 +20,13 @@ export async function fakeApiCall() {
 
 export const contactSchema = z
   .object({
-    firstName: z.string().min(2, 'Bitte geben Sie Ihren Vornamen ein.'),
-    secondName: z.string().min(2, 'Bitte geben Sie Ihren Nachnamen ein.'),
+    name: z.string().min(2, 'Bitte Name eingeben.'),
     email: z
       .string()
       .trim()
       .refine(
         (val) => val === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val),
-        'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+        'Bitte gültige E-Mail eingeben.',
       ),
     phone: z.string().refine(
       (val) => {
@@ -35,7 +34,7 @@ export const contactSchema = z
         return /^[0-9+\s/-]{6,}$/.test(val)
       },
       {
-        message: 'Bitte geben Sie eine gültige Telefonnummer ein.',
+        message: 'Bitte gültige Nummer eingeben',
       },
     ),
     message: z.string().min(5, 'Bitte beschreiben Sie Ihr Anliegen kurz.'),
@@ -124,8 +123,7 @@ function ContactForm() {
 
           <Formik<ContactFormData>
             initialValues={{
-              firstName: '',
-              secondName: '',
+              name: '',
               email: '',
               phone: '',
               message: '',
@@ -143,11 +141,13 @@ function ContactForm() {
               <Form>
                 <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                   <div className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2">
-                    <CustomInput label="Vorname" name="firstName" disabled={isSubmitting} />
-
-                    <CustomInput label="Nachname" name="secondName" disabled={isSubmitting} />
-
+                    {/* <CustomInput label="Vorname" name="firstName" disabled={isSubmitting} />
+                    <CustomInput label="Nachname" name="secondName" disabled={isSubmitting} /> */}
                     <div className="sm:col-span-2">
+                      <CustomInput label="name" name="name" disabled={isSubmitting} />
+                    </div>
+
+                    <div className="sm:col-span-1">
                       <CustomInput
                         label="E-Mail"
                         name="email"
@@ -156,7 +156,7 @@ function ContactForm() {
                       />
                     </div>
 
-                    <div className="sm:col-span-2">
+                    <div className="sm:col-span-1">
                       <CustomInput
                         label="Telefon"
                         name="phone"

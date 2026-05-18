@@ -78,8 +78,7 @@ function ContactFormSimple() {
 
         <Formik<ContactFormData>
           initialValues={{
-            firstName: '',
-            secondName: '',
+            name: '',
             email: '',
             phone: '',
             message: '',
@@ -97,15 +96,18 @@ function ContactFormSimple() {
             <Form>
               <div className="border-border/60 mx-auto max-w-xl rounded-3xl border bg-white p-6 shadow-xl shadow-black/5 lg:p-10">
                 <div className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2">
-                  <CustomInput label="Vorname" name="firstName" disabled={isSubmitting} />
-
-                  <CustomInput label="Nachname" name="secondName" disabled={isSubmitting} />
+                  {/* <CustomInput label="Vorname" name="firstName" disabled={isSubmitting} />
+                  <CustomInput label="Nachname" name="name" disabled={isSubmitting} /> */}
 
                   <div className="sm:col-span-2">
+                    <CustomInput label="name" name="name" disabled={isSubmitting} />
+                  </div>
+
+                  <div className="sm:col-span-1">
                     <CustomInput label="E-Mail" name="email" type="email" disabled={isSubmitting} />
                   </div>
 
-                  <div className="sm:col-span-2">
+                  <div className="sm:col-span-1">
                     <CustomInput label="Telefon" name="phone" type="tel" disabled={isSubmitting} />
                   </div>
 

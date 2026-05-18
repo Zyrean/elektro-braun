@@ -92,8 +92,7 @@ export default function ContactFormImage() {
 
                 <Formik<ContactFormData>
                   initialValues={{
-                    firstName: '',
-                    secondName: '',
+                    name: '',
                     email: '',
                     phone: '',
                     message: '',
@@ -111,11 +110,14 @@ export default function ContactFormImage() {
                     <Form>
                       <div className="mx-auto max-w-xl">
                         <div className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2">
-                          <CustomInput label="Vorname" name="firstName" disabled={isSubmitting} />
-
-                          <CustomInput label="Nachname" name="secondName" disabled={isSubmitting} />
+                          {/* <CustomInput label="Vorname" name="firstName" disabled={isSubmitting} />
+                          <CustomInput label="Nachname" name="secondName" disabled={isSubmitting} /> */}
 
                           <div className="sm:col-span-2">
+                            <CustomInput label="name" name="name" disabled={isSubmitting} />
+                          </div>
+
+                          <div className="sm:col-span-1">
                             <CustomInput
                               label="E-Mail"
                               name="email"
@@ -124,7 +126,7 @@ export default function ContactFormImage() {
                             />
                           </div>
 
-                          <div className="sm:col-span-2">
+                          <div className="sm:col-span-1">
                             <CustomInput
                               label="Telefon"
                               name="phone"
