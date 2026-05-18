@@ -100,7 +100,7 @@ function ContactFormSimple() {
                   <CustomInput label="Nachname" name="name" disabled={isSubmitting} /> */}
 
                   <div className="sm:col-span-2">
-                    <CustomInput label="name" name="name" disabled={isSubmitting} />
+                    <CustomInput label="Name" name="name" disabled={isSubmitting} />
                   </div>
 
                   <div className="sm:col-span-1">
