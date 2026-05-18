@@ -63,7 +63,7 @@ function Gallery({ title, subtitle, images }: GalleryProps) {
   return (
     <>
       <AppSection top={spacing} bottom={spacing}>
-        <AppContainer className="lg:px-0">
+        <AppContainer>
           {title && <SectionHeader title={title} subtitle={subtitle} />}
 
           <Carousel className="w-full" setApi={(embla) => setApi(embla ?? null)}>
